@@ -183,7 +183,7 @@
 <h3 id="optimization"><a class="header" href="#optimization">Optimization</a></h3>
 <p>If you want this function to work in a slash command <strong>only</strong>, then you can use <code>$message[Argument name]</code>. If this function should work in a normal <strong>and</strong> slash command, then you can use <code>$message[Argument number;Argument name]</code>.</p>
 <blockquote>
-<p>🧙‍♂️ For example, <code>$message[message]</code> would just return the input of the slash command option named &quot;message&quot;. <code>$message[1;text]</code> would return the first word of the message <strong>or</strong> the input of the slash command option named &quot;text&quot;. </p>
+<p>🧙‍♂️ For example, <code>$message[message]</code> would just return the input of the slash command option named "message". <code>$message[1;text]</code> would return the first word of the message <strong>or</strong> the input of the slash command option named "text".</p>
 </blockquote>
 <p>Find more info about optimizing <code>$message[]</code> for slash commands <a href="../guides/general/interactions/slashCommands/aboutSlashCommands.html#retrieving-value-from-options">here</a>.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
@@ -195,14 +195,14 @@ Third word: $message[3]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/111157596/231827506-1436330e-1231-4eb6-97df-e2218f29ac26.png" alt="example1" /></p>
 <h3 id="slash-command"><a class="header" href="#slash-command">Slash command</a></h3>
-<p>We retrieve the input of the slash command option named &quot;message&quot;.</p>
+<p>We retrieve the input of the slash command option named "message".</p>
 <pre><code>$nomention
 $message[message]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/95774950/179398322-d9a27169-0030-458d-8abc-ed4462637862.png" alt="example2" />
 <img src="https://user-images.githubusercontent.com/95774950/179398327-6c1f1c00-205f-4dcf-a0ce-08cefed5c937.png" alt="example3" /></p>
 <h3 id="normal-and-slash-command"><a class="header" href="#normal-and-slash-command">Normal and Slash command</a></h3>
-<p>We retrieve the first argument of the message or the input of the slash command option named &quot;text&quot;.</p>
+<p>We retrieve the first argument of the message or the input of the slash command option named "text".</p>
 <pre><code>$nomention
 $message[1;text]
 </code></pre>

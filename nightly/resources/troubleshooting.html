@@ -289,7 +289,7 @@ There's a critical error in your code.<br />
 Callbacks can't return errors that occurred during code execution.
 Therefore, sometimes it's difficult to solve errors in the callback code.<br />
 <em>Best Practice Solution</em><br />
-Try debugging your command as a text command. In most cases, they're backward compatible with the <code>$onJoined</code> callback, since both, by default, process the actions of the command author (when a user joins the server, this user becomes the &quot;author&quot; of this callback).</p>
+Try debugging your command as a text command. In most cases, they're backward compatible with the <code>$onJoined</code> callback, since both, by default, process the actions of the command author (when a user joins the server, this user becomes the "author" of this callback).</p>
 <p><strong>The 4th Reason</strong><br />
 Members Intent isn't enabled.<br />
 This callback requires the Members Intent to be enabled.</p>
@@ -390,7 +390,7 @@ Please use the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_z
 <h3 id="negative-balance"><a class="header" href="#negative-balance">Negative Balance</a></h3>
 <p><strong>The 1st Possible Solution</strong><br />
 Adding limiters or if statements that will prevent actions in which the executor's or target's balance becomes negative.<br />
-This solution can be an alternative to &quot;Prevent actions when the amount is greater than the user's balance&quot;.</p>
+This solution can be an alternative to "Prevent actions when the amount is greater than the user's balance".</p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: center">Argument</th><th style="text-align: center">Content</th></tr></thead><tbody>
 <tr><td style="text-align: center">1st - Target</td><td style="text-align: center">Afternoon</td></tr>
 <tr><td style="text-align: center">2nd - Amount</td><td style="text-align: center">50</td></tr>
@@ -530,14 +530,11 @@ If there are less than 2 arguments, an embed error will be returned and code exe
   &lt;...&gt;
   $var[ourNewBalance;$sub[$getUserVar[Money];$var[amount]]]
 </code></pre>
-<p>Argument formatting. </p>
-<ul>
-<li>
+<p>Argument formatting.
+*</p>
 <pre><code>  $var[ourNewBalance;$sub[$getUserVar[Money];$var[amount]]]
 </code></pre>
 <p>Calculates the <em>our</em> future balance after making a payment.</p>
-</li>
-</ul>
 </li>
 <li>
 <pre><code>  $if[$var[target]==]
@@ -600,7 +597,7 @@ If yes, an embed error will be returned and code execution will be stopped.</p>
       $var[comment;Not provided.]
   $endif
 </code></pre>
-<p>Checks for a comment. If there is no comment (the argument is empty), &quot;Not provided.&quot; will be written as comment.</p>
+<p>Checks for a comment. If there is no comment (the argument is empty), "Not provided." will be written as comment.</p>
 </li>
 <li>
 <pre><code>  $if[$var[ourNewBalance]&lt;0]
@@ -913,7 +910,7 @@ This is the reason why you get this error.</p>
 <h2 id="app-issues"><a class="header" href="#app-issues">App Issues</a></h2>
 <h3 id="the-ad-button-doesnt-work"><a class="header" href="#the-ad-button-doesnt-work">The Ad Button Doesn't Work</a></h3>
 <p><strong>The 1st Reason</strong><br />
-Unstable Internet connection. Make sure your Internet connection is stable and not too slow, because you have to load the ad first to watch it. This is why you see &quot;Loading ad...&quot;.</p>
+Unstable Internet connection. Make sure your Internet connection is stable and not too slow, because you have to load the ad first to watch it. This is why you see "Loading ad...".</p>
 <p><strong>The 2nd Reason</strong><br />
 There're no more ads for you. If that's the reason, there's nothing we can do about it, it's the provider who provides the ads, not us. Try to see the ad later. If the case persists, go to our <a href="https://discord.gg/botdesigner">support server</a>, create a ticket using the <code>!new</code> command and inform the staff about your problem by providing a screen recording longer than 30 seconds.</p>
 <p><strong>The 3nd Reason</strong><br />
@@ -929,23 +926,23 @@ The advertising provider we use is blocked in your country or region. There is n
 </li>
 </ol>
 <h3 id="ghost-functions-from-the-changelog"><a class="header" href="#ghost-functions-from-the-changelog">Ghost Functions From The Changelog</a></h3>
-<p>In this section, the easiest way to explain everything is through dialogue: </p>
+<p>In this section, the easiest way to explain everything is through dialogue:</p>
 <discord-messages>
-    <discord-message author="Random Guy" role-color="#FFFC2B" avatar="https://user-images.githubusercontent.com/111157596/257246455-2cf542ce-27ef-4584-a91d-c6251b2a5711.png" timestamp="Today at 9:50 PM">
+    <discord-message author="Random Guy" timestamp="Today at 9:50 PM" role-color="#FFFC2B" avatar="https://user-images.githubusercontent.com/111157596/257246455-2cf542ce-27ef-4584-a91d-c6251b2a5711.png">
         I was told by a friend that a new function, <code>$botOwnerID</code>, has just been added to the changelog or recently. I'm trying to use it, but it just doesn't work. What I mean is:
         <discord-attachment url="https://user-images.githubusercontent.com/70456337/201180869-83b05576-617c-4bc1-b77c-87bacaac3b32.png" slot="attachments">
         </discord-attachment>
     </discord-message>
-    <discord-message author="Nakidamiru" role-color="#57CEE8" timestamp="Today at 9:53 PM" avatar="https://cdn.discordapp.com/avatars/437154602626973697/5882ae1fc1428f7f7e36e26d97769e72.png">
+    <discord-message role-color="#57CEE8" avatar="https://cdn.discordapp.com/avatars/437154602626973697/7e66ed869e0e812e5367aa1666ae21b3.png" author="Nakidamiru" timestamp="Today at 9:53 PM">
         This is normal. Right, the function has already been added and exists, but it can't be used at the moment. The nodes (the place where your bots work) have not yet been updated, or your exact node has not yet been updated. The update will slowly be released to each node over time. It isn't released to all nodes at once for the purpose of testing the stability and performance of the update.
     </discord-message>
-    <discord-message role-color="#57CEE8" author="Nakidamiru" avatar="https://cdn.discordapp.com/avatars/437154602626973697/5882ae1fc1428f7f7e36e26d97769e72.png" timestamp="Today at 9:53 PM">
+    <discord-message timestamp="Today at 9:53 PM" author="Nakidamiru" avatar="https://cdn.discordapp.com/avatars/437154602626973697/7e66ed869e0e812e5367aa1666ae21b3.png" role-color="#57CEE8">
         Usually, all nodes are updated by the end of the month.
     </discord-message>
-    <discord-message timestamp="Today at 9:54 PM" role-color="#FFFC2B" avatar="https://user-images.githubusercontent.com/111157596/257246455-2cf542ce-27ef-4584-a91d-c6251b2a5711.png" author="Random Guy">
+    <discord-message timestamp="Today at 9:54 PM" avatar="https://user-images.githubusercontent.com/111157596/257246455-2cf542ce-27ef-4584-a91d-c6251b2a5711.png" author="Random Guy" role-color="#FFFC2B">
         Allright, thank you! I will wait patiently!
     </discord-message>
-    <discord-message author="Nakidamiru" role-color="#57CEE8" avatar="https://cdn.discordapp.com/avatars/437154602626973697/5882ae1fc1428f7f7e36e26d97769e72.png" timestamp="Today at 9:54 PM">
+    <discord-message role-color="#57CEE8" timestamp="Today at 9:54 PM" author="Nakidamiru" avatar="https://cdn.discordapp.com/avatars/437154602626973697/7e66ed869e0e812e5367aa1666ae21b3.png">
         You're welcome, Random Guy.
     </discord-message>
 </discord-messages>

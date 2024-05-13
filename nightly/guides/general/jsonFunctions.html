@@ -201,10 +201,10 @@ This function parses a JSON string into an object which can then be used by othe
 <h4 id="without-arrays"><a class="header" href="#without-arrays">Without Arrays</a></h4>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;username&quot;: &quot;NightNutSky&quot;,
-    &quot;tag&quot;: &quot;6700&quot;,
-    &quot;identity&quot;: {
-        &quot;age&quot;: 16
+    "username": "NightNutSky",
+    "tag": "6700",
+    "identity": {
+        "age": 16
     }
 }]
 
@@ -216,15 +216,15 @@ Age: $json[identity;age] years old
 <h4 id="with-arrays"><a class="header" href="#with-arrays">With Arrays</a></h4>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;computer&quot;: [{
-        &quot;apps&quot;: {
-            &quot;software&quot;: [&quot;BlueStacks&quot;, &quot;Krita&quot;, &quot;Visual Studio Code&quot;\],
-            &quot;games&quot;: [&quot;GTA 5&quot;, &quot;RDR 2&quot;, &quot;CS:GO&quot;, &quot;Cyberpunk 2077&quot;\]
+    "computer": [{
+        "apps": {
+            "software": ["BlueStacks", "Krita", "Visual Studio Code"\],
+            "games": ["GTA 5", "RDR 2", "CS:GO", "Cyberpunk 2077"\]
         }
     },{
-        &quot;cpu&quot;: &quot;Intel&quot;,
-        &quot;gpu&quot;: &quot;NVIDIA&quot;,
-        &quot;ram&quot;: &quot;XPG&quot;
+        "cpu": "Intel",
+        "gpu": "NVIDIA",
+        "ram": "XPG"
     }\]
 }]
 
@@ -246,10 +246,10 @@ Brands: CPU - $json[computer;1;cpu], GPU - $json[computer;1;gpu], RAM - $json[co
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;username&quot;: &quot;NightNutSky&quot;,
-    &quot;tag&quot;: &quot;6700&quot;,
-    &quot;identity&quot;: {
-        &quot;age&quot;: 16
+    "username": "NightNutSky",
+    "tag": "6700",
+    "identity": {
+        "age": 16
     }
 }]
 
@@ -307,7 +307,7 @@ Balance key was set to: $json[balance]
 <p>If we set this value as a number manually, we'll encounter issues.</p>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;balance&quot;: 788895455566645444567
+    "balance": 788895455566645444567
 }]
 
 Balance key: $json[balance]
@@ -315,7 +315,7 @@ Balance key: $json[balance]
 <p><img src="https://user-images.githubusercontent.com/70456337/216845297-44217351-0485-4249-a19d-edabbe9b71fb.png" alt="" /></p>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;balance&quot;: &quot;788895455566645444567&quot;
+    "balance": "788895455566645444567"
 }]
 
 Balance key: $json[balance]
@@ -337,10 +337,10 @@ In short, the opposite of the <a href="#jsonset"><code>$jsonSet</code></a> funct
 <h3 id="example-2"><a class="header" href="#example-2">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;username&quot;: &quot;NightNutSky&quot;,
-    &quot;tag&quot;: &quot;6700&quot;,
-    &quot;identity&quot;: {
-        &quot;age&quot;: 16
+    "username": "NightNutSky",
+    "tag": "6700",
+    "identity": {
+        "age": 16
     }
 }]
 
@@ -365,10 +365,10 @@ Age: $json[identity;age] years old]
 <h3 id="example-3"><a class="header" href="#example-3">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;username&quot;: &quot;NightNutSky&quot;,
-    &quot;tag&quot;: &quot;6700&quot;,
-    &quot;identity&quot;: {
-        &quot;age&quot;: 16
+    "username": "NightNutSky",
+    "tag": "6700",
+    "identity": {
+        "age": 16
     }
 }]
 
@@ -402,15 +402,15 @@ Username: $optOff[$json[username]]
 <h3 id="example-4"><a class="header" href="#example-4">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;computer&quot;: [{
-        &quot;apps&quot;: {
-            &quot;software&quot;: [&quot;BlueStacks&quot;, &quot;Krita&quot;, &quot;Visual Studio Code&quot;\],
-            &quot;games&quot;: [&quot;GTA 5&quot;, &quot;RDR 2&quot;, &quot;CS:GO&quot;, &quot;Cyberpunk 2077&quot;\]
+    "computer": [{
+        "apps": {
+            "software": ["BlueStacks", "Krita", "Visual Studio Code"\],
+            "games": ["GTA 5", "RDR 2", "CS:GO", "Cyberpunk 2077"\]
         }
     },{
-        &quot;cpu&quot;: &quot;Intel&quot;,
-        &quot;gpu&quot;: &quot;NVIDIA&quot;,
-        &quot;ram&quot;: &quot;XPG&quot;
+        "cpu": "Intel",
+        "gpu": "NVIDIA",
+        "ram": "XPG"
     }\]
 }]
 
@@ -432,7 +432,7 @@ $jsonStringify
 <h3 id="example-5"><a class="header" href="#example-5">Example</a></h3>
 <pre><code>$nomention
 $disableInnerSpaceRemoval
-$jsonParse[{&quot;computer&quot;:[{&quot;apps&quot;:{&quot;software&quot;:[&quot;BlueStacks&quot;,&quot;Krita&quot;,&quot;Visual Studio Code&quot;\],&quot;games&quot;:[&quot;GTA 5&quot;,&quot;RDR 2&quot;,&quot;CS:GO&quot;,&quot;Cyberpunk 2077&quot;\]}},{&quot;cpu&quot;:&quot;Intel&quot;,&quot;gpu&quot;:&quot;NVIDIA&quot;,&quot;ram&quot;:&quot;XPG&quot;}\]
+$jsonParse[{"computer":[{"apps":{"software":["BlueStacks","Krita","Visual Studio Code"\],"games":["GTA 5","RDR 2","CS:GO","Cyberpunk 2077"\]}},{"cpu":"Intel","gpu":"NVIDIA","ram":"XPG"}\]
 }]
 
 $jsonPretty[4]
@@ -453,7 +453,7 @@ $jsonPretty[4]
 <h3 id="example-6"><a class="header" href="#example-6">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;games&quot;: &quot;&quot;
+    "games": ""
 }]
 
 Non-array `games` key:
@@ -477,15 +477,15 @@ $optOff[$jsonPretty[4]]
 <h3 id="example-7"><a class="header" href="#example-7">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;computer&quot;: [{
-        &quot;apps&quot;: {
-            &quot;software&quot;: [&quot;BlueStacks&quot;, &quot;Krita&quot;, &quot;Visual Studio Code&quot;\],
-            &quot;games&quot;: [&quot;GTA 5&quot;, &quot;RDR 2&quot;, &quot;CS:GO&quot;, &quot;Cyberpunk 2077&quot;\]
+    "computer": [{
+        "apps": {
+            "software": ["BlueStacks", "Krita", "Visual Studio Code"\],
+            "games": ["GTA 5", "RDR 2", "CS:GO", "Cyberpunk 2077"\]
         }
     },{
-        &quot;cpu&quot;: &quot;Intel&quot;,
-        &quot;gpu&quot;: &quot;NVIDIA&quot;,
-        &quot;ram&quot;: &quot;XPG&quot;
+        "cpu": "Intel",
+        "gpu": "NVIDIA",
+        "ram": "XPG"
     }\]
 }]
 
@@ -509,15 +509,15 @@ The count of the `$message` apps is $jsonArrayCount[computer;0;apps;$message].
 <h3 id="example-8"><a class="header" href="#example-8">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;computer&quot;: [{
-        &quot;apps&quot;: {
-            &quot;software&quot;: [&quot;BlueStacks&quot;, &quot;Krita&quot;, &quot;Visual Studio Code&quot;\],
-            &quot;games&quot;: [&quot;GTA 5&quot;, &quot;RDR 2&quot;, &quot;CS:GO&quot;, &quot;Cyberpunk 2077&quot;\]
+    "computer": [{
+        "apps": {
+            "software": ["BlueStacks", "Krita", "Visual Studio Code"\],
+            "games": ["GTA 5", "RDR 2", "CS:GO", "Cyberpunk 2077"\]
         }
     },{
-        &quot;cpu&quot;: &quot;Intel&quot;,
-        &quot;gpu&quot;: &quot;NVIDIA&quot;,
-        &quot;ram&quot;: &quot;XPG&quot;
+        "cpu": "Intel",
+        "gpu": "NVIDIA",
+        "ram": "XPG"
     }\]
 }]
 
@@ -537,15 +537,15 @@ The $message's index in `apps/software` is $jsonArrayIndex[computer;0;apps;softw
 <h3 id="example-9"><a class="header" href="#example-9">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;computer&quot;: [{
-        &quot;apps&quot;: {
-            &quot;software&quot;: [&quot;BlueStacks&quot;, &quot;Krita&quot;, &quot;Visual Studio Code&quot;\],
-            &quot;games&quot;: [&quot;GTA 5&quot;, &quot;RDR 2&quot;, &quot;CS:GO&quot;, &quot;Cyberpunk 2077&quot;\]
+    "computer": [{
+        "apps": {
+            "software": ["BlueStacks", "Krita", "Visual Studio Code"\],
+            "games": ["GTA 5", "RDR 2", "CS:GO", "Cyberpunk 2077"\]
         }
     },{
-        &quot;cpu&quot;: &quot;Intel&quot;,
-        &quot;gpu&quot;: &quot;NVIDIA&quot;,
-        &quot;ram&quot;: &quot;XPG&quot;
+        "cpu": "Intel",
+        "gpu": "NVIDIA",
+        "ram": "XPG"
     }\]
 }]
 
@@ -571,7 +571,7 @@ Current apps in the `$message[1]` category: $json[computer;0;apps;$message[1]]
 <h3 id="example-10"><a class="header" href="#example-10">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;music&quot;: [&quot;Paranoid - MADKID&quot;, &quot;Ping! 2 - Exyl&quot;, &quot;Tokyo - Leat'eq&quot;\]
+    "music": ["Paranoid - MADKID", "Ping! 2 - Exyl", "Tokyo - Leat'eq"\]
 }]
 
 Removed: $jsonArrayPop[music]
@@ -592,7 +592,7 @@ Current music:
 <h3 id="example-11"><a class="header" href="#example-11">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;music&quot;: [&quot;Paranoid - MADKID&quot;, &quot;Ping! 2 - Exyl&quot;, &quot;Tokyo - Leat'eq&quot;\]
+    "music": ["Paranoid - MADKID", "Ping! 2 - Exyl", "Tokyo - Leat'eq"\]
 }]
 
 Removed: $jsonArrayShift[music]
@@ -614,7 +614,7 @@ Current music:
 <h3 id="example-12"><a class="header" href="#example-12">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;music&quot;: [&quot;Paranoid - MADKID&quot;, &quot;Ping! 2 - Exyl&quot;, &quot;Tokyo - Leat'eq&quot;\]
+    "music": ["Paranoid - MADKID", "Ping! 2 - Exyl", "Tokyo - Leat'eq"\]
 }]
 
 $jsonArrayUnshift[music;Side Character - Cloudfodder]
@@ -638,7 +638,7 @@ Music:
 <h3 id="example-13"><a class="header" href="#example-13">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-  &quot;data&quot;: [&quot;Oranges&quot;, &quot;banana&quot;, 10, &quot;apple&quot;, &quot;Apples&quot;, 2, 30\]
+  "data": ["Oranges", "banana", 10, "apple", "Apples", 2, 30\]
 }]
 
 $jsonArraySort[data]
@@ -659,7 +659,7 @@ After sorting:
 <h3 id="example-14"><a class="header" href="#example-14">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-  &quot;fruits&quot;: [&quot;apple&quot;, &quot;orange&quot;, &quot;banana&quot;, &quot;grape&quot;\]
+  "fruits": ["apple", "orange", "banana", "grape"\]
 }]
 
 $jsonArrayReverse[fruits]
@@ -684,7 +684,7 @@ After reversing:
 <h3 id="example-15"><a class="header" href="#example-15">Example</a></h3>
 <pre><code>$nomention
 $jsonParse[{
-    &quot;music&quot;: [&quot;Paranoid - MADKID&quot;, &quot;Ping! 2 - Exyl&quot;, &quot;Tokyo - Leat'eq&quot;\]
+    "music": ["Paranoid - MADKID", "Ping! 2 - Exyl", "Tokyo - Leat'eq"\]
 }]
 
 Music:

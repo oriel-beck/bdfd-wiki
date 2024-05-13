@@ -202,7 +202,7 @@
       sendChannelMessage(channelId, `A ${type} channel has been created!`);
 
       createChannel(msg.join(' '), type);
-    } else throw new Error('Invalid Channel Type!! Must be either &quot;Text&quot; or &quot;Voice&quot;');
+    } else throw new Error('Invalid Channel Type!! Must be either "Text" or "Voice"');
   };
 } catch (err) {
   setResponse('Command Error : ` ' + err.message + ' `');
