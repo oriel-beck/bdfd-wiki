@@ -1,7 +1,5 @@
 # Changelog
 
-> If you want to access this changelog externally, we have a [JSON version](https://raw.githubusercontent.com/NilPointer-Software/bdfd-wiki/dev/external/CHANGELOG.json) of the changelog to which you can send a GET request and work with a JSON document further.
-
 # 2023
 
 ## June
@@ -673,5 +671,6 @@
 - Released translation strings to volunteers
 - Added `kick()` and `ban()` to JS
 - Released new stable version
-
 </details>
+
+> If you want to access this changelog externally, we have a [JSON version](https://raw.githubusercontent.com/NilPointer-Software/bdfd-wiki/dev/external/CHANGELOG.json) of the changelog to which you can send a GET request and work with a JSON document further.
