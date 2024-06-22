@@ -3,13 +3,13 @@ Bans a user using their ID.
 
 ## Syntax
 ```
-$banID[reason;(user ID)]
+$banID[Reason;(User ID)]
 ```
 
 ### Parameters
-- `reason` `(Type: String || Flag: Emptiable)`: The reason for this action, which will be saved in the audit-log.
+- `Reason` `(Type: String || Flag: Emptiable)`: The reason for the ban, which will be saved in the audit-log.
    > Use [`$getBanReason[]`](./getBanReason.md) to get the ban reason.
-- `user ID` `(Type: Snowflake || Flag: Vacantable)`: The user to ban. If empty, the ID will be taken from the last part of the author's message.
+- `User ID` `(Type: Snowflake || Flag: Vacantable)`: The user to ban. If empty, the ID will be taken from the last part of the author's message.
 
 ## Example
 ```
@@ -20,6 +20,22 @@ $onlyIf[$findUser[$message[1];no]!=;Failed to find user!]
 <@$findUser[$message;no]> was banned!
 $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
 ```
-![exsmple](https://user-images.githubusercontent.com/113303649/212003254-1573bdd3-6417-4dd1-afd0-23f5ed1fa297.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 854665455527526421 Hello!
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <@Chilli> was banned!
+- content: |
+      <font color="white">Chilli</font> left without pizza.
+  type: leave
+```
 
 > [How `$findUser[]` works?](./findUser.md)

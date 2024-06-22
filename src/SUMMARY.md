@@ -3,6 +3,7 @@
 [Foreword](foreword.md)
 [Changelog](CHANGELOG.md)
 [Terms of Service](terms.md)
+[Entity Transfer Policy](entityTransferPolicy.md)
 
 ---
 
@@ -446,6 +447,8 @@
         - [$messageContains](./premium/messageContains.md) 
         - [$reaction](./premium/reaction.md)
     - [Functions]()
+        - [$ai](./premium/ai.md)
+        - [$aiQuota](./premium/aiQuota.md)
         - [$awaitReactions](./premium/awaitReactions.md)
         - [$customImage](./premium/customImage.md)
         - [$usedEmoji](./premium/usedEmoji.md)

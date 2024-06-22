@@ -13,8 +13,34 @@ $allowMention
 $message
 ```
 
-### With `$allowMention`
-![example](https://user-images.githubusercontent.com/113303649/209938280-bd18eeca-41f6-4193-ac65-665455c0b14a.png)
-
+### With `$allowMention`:
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
+  color: "#E67E22"
+  content: |
+    !example <@RainbowKey>
+- username: BDFD Support
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <@RainbowKey>
+```
+\
 ### Without `$allowMention`
-![example](https://user-images.githubusercontent.com/113303649/209938701-6c4bd976-ddb8-4a59-9522-b986313dde46.png)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@RainbowKey>
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    @RainbowKey
+```

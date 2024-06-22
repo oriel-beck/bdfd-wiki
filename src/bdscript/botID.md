@@ -12,4 +12,16 @@ $nomention
 My ID is: $botID
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/122831592-13076800-d2b8-11eb-819e-bc101e6b4bdd.png)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    My ID: 1009018156494368798
+```

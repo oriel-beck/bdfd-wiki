@@ -20,4 +20,22 @@ The soul of your command. This is what the bot responds when the command is exec
 ![image](https://user-images.githubusercontent.com/69215413/120054230-b092b300-bffc-11eb-805d-16b8b6c41cc1.png)
 
 #### Output
-![image](https://user-images.githubusercontent.com/69215413/120053639-4fb5ab80-bff9-11eb-8736-705d9d342256.png)
+```
+- user_id: 803569638084313098
+  username: RainbowKey
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
+  color: "#E67E22"
+  content: |
+    !help
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed:
+    title: Help
+    description: |
+      !command1 - description... 
+      !command2 - description... 
+      etc
+```

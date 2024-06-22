@@ -15,6 +15,21 @@ $onlyPerms[ban;You need the `ban` permission to use that command!]
 $banID
 ```
 
-![example](https://user-images.githubusercontent.com/113303649/212000187-c49814b3-9eca-48a4-bf89-31a9c1d74c11.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 854665455527526421
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    <@Chilli> was banned!
+- content: |
+      <font color="white">Chilli</font> left without pizza.
+  type: leave
+```
 
 > [How `$findUser[]` works?](./findUser.md)

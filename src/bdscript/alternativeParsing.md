@@ -9,22 +9,83 @@ $alternativeParsing
 
 ## Example
 1. Create two commands and set the trigger `hello` for one command and `helloworld` for the other.
-2.  Add the `$alternativeParsing` function to the command code with the `hello` trigger.
+2. Add the `$alternativeParsing` function to the command code with the `hello` trigger.
 
-Code with trigger `hello`:
-```
-$nomention
-$alternativeParsing
-$description["hello"]
-```
-Code with trigger `helloworld`:
-```
-$nomention
-$description["helloworld"]
-```
-3. Execute commands
-### With `$alternativeParsing`
-![example](https://user-images.githubusercontent.com/113303649/209946250-ddf50d47-b8a7-48c2-8404-a2a58981c36d.png)
-
-### Without `$alternativeParsing`
-![example](https://user-images.githubusercontent.com/113303649/209946555-3b270854-0176-4492-bd1a-2ba81bf389c1.png)
+    Code with trigger `hello`:
+    ```
+    $nomention
+    $alternativeParsing
+    $description["hello"]
+    ```
+    Code with trigger `helloworld`:
+    ```
+    $nomention
+    $description["helloworld"]
+    ```
+3. Execute commands.
+    ### With `$alternativeParsing`
+    ``` discord yaml
+    - user_id: 729343563401265193
+      username: Nicky
+      color: "#EE7908"
+      content: |
+        hello
+    
+    - user_id: 566613317972394004
+      username: Wiki Bot
+      color: "#748BD4"
+      bot: true
+      verified: true
+      content: <none>
+      embed:
+        description: "\"hello\""
+    
+    - user_id: 729343563401265193
+      username: Nicky
+      color: "#EE7908"
+      content: |
+        helloworld
+    
+    - user_id: 566613317972394004
+      username: Wiki Bot
+      color: "#748BD4"
+      bot: true
+      verified: true
+      content: <none>
+      embed:
+        description: "\"helloworld\""
+    ```
+    \
+    ### Without `$alternativeParsing`
+    ``` discord yaml
+    - user_id: 729343563401265193
+      username: Nicky
+      color: "#EE7908"
+      content: |
+        hello
+    
+    - user_id: 566613317972394004
+      username: Wiki Bot
+      color: "#748BD4"
+      bot: true
+      verified: true
+      content: <none>
+      embed:
+        description: "\"hello\""
+    
+    - user_id: 729343563401265193
+      username: Nicky
+      color: "#EE7908"
+      content: |
+        helloworld
+    
+    - user_id: 566613317972394004
+      username: Wiki Bot
+      color: "#748BD4"
+      bot: true
+      verified: true
+      content: <none>
+      embeds:
+      - description: "\"helloworld\""
+      - description: "\"hello\""
+    ```

@@ -6,7 +6,6 @@ In this guide, you will learn how to create your own bot using BDFD.
 
 ## Functions Used
 - [`$nomention`](../../bdscript/nomention.md)
-- [`$reply`](../../bdscript/reply.md)
 
 # Step 1: Creating
 - Go to [Discord Developer Portal](https://discord.com/developers/applications).
@@ -24,7 +23,7 @@ In this guide, you will learn how to create your own bot using BDFD.
 - Open the BDFD app and select your bot.
 - Click on the *"Invite bot to server"* button.
 - Press the *"Edit invite link permissions"* button and choose the permissions that the bot will have when joining a server.
-- Then, click on *"Add your bot to your server"* and selected the server.
+- Then, click on *"Add your bot to your server"* and select the server.
 - Click on *the "Continue"* button and your bot will be added to the selected server.
 
 # Step 3: First Code
@@ -33,11 +32,11 @@ You will see 3 categories ("Command Name", "Command Trigger", "Template Function
 - Come up with a name for your command and paste it into the "Command  Name" field. (You can leave it blank).
 - Now come up with a trigger for the command. (Example: `!ping`).
 > It is important that the trigger of the command matches its meaning.
+
 After completing the command setup, press the *"Create Command"* button. Now you can create your first code!
 In "Reply Message" you can paste this code:
 ```
 $nomention
-$reply
 Pong!
 ```
 - Click on *"Save command"* to save the code.
@@ -46,6 +45,7 @@ Pong!
 ### Method 1 - 30 Minutes
 - Click on the *"Dashboard"* tab after selecting your bot and press on the *"+ Add free hosting time"* button.
 - Enter the indicated numbers and click *"Confirm"*.
+> Note: This method only works when your bot is offline.
 ### Method 2 - 140 Minutes
 - Press on *"Dashboard"* tab after selecting your bot and click on *"+ Watch ad for 140 minutes of free hosting time"*.
 - After watching the ad, your bot will receive 140 minutes of hosting time.
@@ -56,4 +56,18 @@ Pong!
 ## Step 5: Test it!
 Send a `!ping` command in a channel of the server you invited your bot to.
 
-![example](https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/5a5eca33-6c2b-4e46-8283-a6312462f6f5)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
+  color: "#E67E22"
+  content: |
+    !ping
+- username: BDFD Support
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Pong!
+```

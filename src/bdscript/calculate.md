@@ -3,13 +3,13 @@ Calculates a math expression.
 
 ## Syntax
 ```
-$calculate[expression]
+$calculate[Expression]
 ```
 
 ### Parameters
-- `expression` `(Type: String || Flag: Required)`: The math expression to solve.
+- `Expression` `(Type: String || Flag: Required)`: The math expression to solve.
 
-## Signs
+### Signs
 - `+` - Addition.
 - `-` - Subtraction.
 - `/` - Division.
@@ -24,8 +24,19 @@ $nomention
 $enableDecimals[yes]
 $calculate[$message] 🧠
 ```
-![example](https://user-images.githubusercontent.com/113303649/211189019-cb221556-9d2a-494a-a60f-abaf388dbf4b.png)
 
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 10+5.9-9
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    6.9 🧠
+```
 
-> [How `$enableDecimals[]` works?](./bdscript/enableDecimals.md)
-
+> [How does `$enableDecimals[]` work?](./enableDecimals.md)

@@ -15,6 +15,21 @@ $ | `%{DOL}%`
 
 ## Example
 ```
+$nomention
 $sendMessage[[ Hi, this is pretty cool\; right? \]]
 ```
-![example](https://user-images.githubusercontent.com/69215413/122793121-d53f1b00-d288-11eb-9fab-8594c6059786.png)
+
+```
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    [ Hi, this is pretty cool; right? ]
+```

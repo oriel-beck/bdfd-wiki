@@ -1,7 +1,7 @@
 # $date
 Returns the current date.
 
-> 🧙‍♂️ You can use [`$time`](./time.md) to change the timezone.
+> You can use [`$time`](./time.md) to change the timezone.
 
 ## Syntax
 ```
@@ -13,4 +13,17 @@ $date
 $nomention
 Today's Date: $date
 ```
-![example](https://user-images.githubusercontent.com/69215413/122827414-5232ba80-d2b2-11eb-8e0f-de15f7933660.png)
+
+``` discord yaml
+- user_id: 729343563401265193
+  username: Nicky
+  color: "#EE7908"
+  content: |
+    !example
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  content: |
+    Today's Date: 2024-06-22
+```

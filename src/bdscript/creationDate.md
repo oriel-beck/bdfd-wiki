@@ -3,16 +3,16 @@ Returns the creation date of any valid Discord Snowflake ID.
 
 ## Syntax
 ```
-$creationDate[ID;(format)]
+$creationDate[ID;(Format)]
 ```
-
-### Parameters
-- `ID` `(Type: Snowflake || Flag: Required)`: The ID from which to get the creation date. The ID can be a `UserID`, a `RoleID`, a `MessageID`, or a `ServerID`.
-- `format` `(Type: String || Flag: Optional)`: Customize the default time format output.
 
 > Uses GoLang date format
 
-   > Click [me](../resources/timeFormat.md) to check all supported time format values.
+### Parameters
+- `ID` `(Type: Snowflake || Flag: Required)`: The ID from which to get the creation date. The ID can be a `User ID`, a `Role ID`, a `Message ID`, a `Emoji ID`, or a `Guild ID`.
+>  [How to get the ID guide.](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+- `Format` `(Type: String || Flag: Optional)`: Customize the default time format output.
+> Click [me](../resources/timeFormat.md) to check all supported time format values.
 
 ## Example
 - Default format
@@ -20,12 +20,41 @@ $creationDate[ID;(format)]
    $nomention
    $creationDate[$authorID]
    ```
+   
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    2021-01-26
+```
+\
 
-   ![example](https://user-images.githubusercontent.com/69215413/127032089-ef8aa439-89c9-46b2-a2e4-cdf54ab7fa6b.png)
 - Custom format
    ```
    $nomention
    $creationDate[$authorID;January 2, 2006 at 3:04 PM (MST -07:00)]
    ```
 
-   ![example](https://user-images.githubusercontent.com/95774950/197385800-92a434d2-e388-4067-8a78-d9357f6184bd.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    January 26, 2021 at 10:18 AM (UTC +00:00)
+```
+\

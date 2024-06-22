@@ -30,6 +30,51 @@ $nomention
 $and[$nickname==MineBartekSA;$message==Update]
 ```
 
-![example](https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/d277f043-6acd-418c-8695-ced1f2061c20)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example Update
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    false
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    false
+- user_id: 154148273307910144
+  username: MineBartekSA
+  color: "#f1bdee"
+  content: |
+    !example 
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    false
+- user_id: 154148273307910144
+  username: MineBartekSA
+  color: "#f1bdee"
+  content: |
+    !example Update
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    true
+  ```
 
 > For more info, see the [If Guide](../guides/ifStatements.md).

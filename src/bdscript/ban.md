@@ -12,4 +12,20 @@ $nomention
 $ban
 <@$mentioned[1]> was banned!
 ```
-![example](https://user-images.githubusercontent.com/69215413/119858159-32da8480-bee2-11eb-922d-0fb05a5aa7c9.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example <@Spen>
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      <@Spen> was banned!
+- content: |
+      <font color="white">Spen</font> left without pizza.
+  type: leave
+```

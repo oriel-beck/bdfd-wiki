@@ -17,10 +17,25 @@ You can use hyperlinks inside [`$description[]`](../../bdscript/description.md),
 $nomention
 $description[This bot is made with [Bot Designer For Discord\](https://botdesignerdiscord.com)]
 ```
-![example](https://user-images.githubusercontent.com/69215413/127039004-e1a607b5-af0f-4761-9d33-954f7dcad155.png)
 
-## Title Hyperlinks
+```
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example abc
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  embed: 
+    description: This bot is made with <a href="https://botdesignerdiscord.com">Bot Designer For Discord</a>!
+```
+\
+
+### Title Hyperlinks
 Use the [$embeddedURL](../../bdscript/embeddedURL.md) function to add a hyperlink in [$title](../../bdscript/title.md).
 
-## Author Hyperlinks
+### Author Hyperlinks
 Use the [$authorURL](../../bdscript/authorURL.md) function to add a hyperlink in [$author](../../bdscript/author.md).

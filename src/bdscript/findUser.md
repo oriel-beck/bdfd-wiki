@@ -1,7 +1,5 @@
 # $findUser
-Finds a user's ID using username, ID, or mention.
-
-> 📝 This function can only find users of the current server.
+Finds a user's ID using username, ID, or mention in the current server.
 
 ## Syntax
 ```
@@ -15,7 +13,20 @@ $findUser[User;(Return author ID?)]
 ## Example
 ```
 $nomention
-$findUser[$message]
+User ID: $findUser[$message]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/125977542-dbb250bd-d91d-4fdd-85d7-26b511a7efa8.png)
+```
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    User ID: 1009018156494368798
+```

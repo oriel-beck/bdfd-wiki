@@ -3,12 +3,12 @@ Blocks users with certain role(s) from using the command. If the user has any ro
 
 ## Syntax
 ```
-$blackListRoles[role names;...;error message]
+$blackListRoles[Role names;...;Error message]
 ```
 
 ### Parameters
-- `role names` `(Type: String || Flag: Emptiable)`: The name(s) of the role(s) to blacklist. Separate role names using `;`.
-- `error message` `(Type: String || Flag: Emptiable)`: The message that will be sent if the user has a role from the blacklist.
+- `Role names` `(Type: String || Flag: Emptiable)`: The name(s) of the role(s) to blacklist. Use semicolons `;` as a separator to separate multiple role names.
+- `Error message` `(Type: String || Flag: Emptiable)`: The message that will be sent if the user has a role from the blacklist.
 
 ## Example
 ```
@@ -17,4 +17,32 @@ $blackListRoles[Owner;Bot;❌ You can't use this command!]
 Pong! $ping ms
 ```
 
-![example](https://user-images.githubusercontent.com/113303649/210046896-9e45b0c5-68f1-49b8-9bf0-90694df688cf.png)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      ❌ You can't use this command!
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    Because I have a role with name "Owner".
+- user_id: 437154602626973697
+  username: Kito
+  color: "#4365ab"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      Pong! 2 ms
+```

@@ -1,5 +1,7 @@
 # Changelog
 
+> If you want to access this changelog externally, we have a [JSON version](https://raw.githubusercontent.com/NilPointer-Software/bdfd-wiki/dev/external/CHANGELOG.json) of the changelog to which you can send a GET request and work with a JSON document further.
+
 # 2023
 
 ## June
@@ -16,6 +18,8 @@
 - Added `$displayName[]`
 - Added `$userBadges[]`
 - Added `$userBannerColor[]`
+
+<details><summary>Previous Updates</summary>
 
 ## May
 - Fixed `$min[]` and `$max[]` not working with floats
@@ -65,6 +69,8 @@
 - Added `$jsonSetString[]`
 - Added `$jsonArrayIndex[]`
 
+</details>
+
 # 2022
 
 ## December
@@ -74,6 +80,8 @@
 - Added `$getBanReason[]`
 - Fixed caching issues for the text splitting functions
 - Fixed issues with custom images
+
+<details><summary>Previous Updates</summary>
 
 ## November
 - Deprecated `$userJoinedDiscord[]` in favor of `$creationDate[]`
@@ -199,18 +207,20 @@
 - Added `$appendOptionSuggestion[]`
 
 ## January
--  Added `$unescape[]`
--  Added a neutral permission (`/<perm>`) to `$modifyChannelPerms[]`
--  Added stop bot button in the app
--  Added restart bot button in the app
--  Added `$editChannelPerms[]` (replacement for the deprecated `$modifyChannelPerms[]`)
--  Added `$roleGrant[]` (replacement for the deprecated `$giveRole[]` and `$takeRole[]`)
--  Fixed component functions inside `$async[]` scope
--  Increased the limit of http functions in one command to `5`
--  Fixed `$userPerms[]`
--  Fixed some bugs regarding math commands
--  Added public BDFD API
--  Added `$serverDescription[]`
+- Added `$unescape[]`
+- Added a neutral permission (`/<perm>`) to `$modifyChannelPerms[]`
+- Added stop bot button in the app
+- Added restart bot button in the app
+- Added `$editChannelPerms[]` (replacement for the deprecated `$modifyChannelPerms[]`)
+- Added `$roleGrant[]` (replacement for the deprecated `$giveRole[]` and `$takeRole[]`)
+- Fixed component functions inside `$async[]` scope
+- Increased the limit of http functions in one command to `5`
+- Fixed `$userPerms[]`
+- Fixed some bugs regarding math commands
+- Added public BDFD API
+- Added `$serverDescription[]`
+
+</details>
 
 # 2021
 
@@ -235,6 +245,8 @@
 - Added missing permissions
 - Fixed unintentional server restarts
 - The last argument in `$replaceText[]` is now optional
+
+<details><summary>Previous Updates</summary>
 
 ## November
 - Added `$reply[]`
@@ -356,7 +368,7 @@
 - Fixed `$sendMessage[]` not working in normal BDScript
 - Fixed `$checkUserPerms[]`
 - Added BDScript 2 script language
-- Added to BDScript 2
+- Added to BDScript 2:
    - `$try`, `$catch` and `$error`
    - `$eval[]`
    - `$optOff[]`
@@ -416,7 +428,7 @@
 - Fixed caching for new members.
 - Added `$slashCommandsCount`
 - Added `$botID`
-- Added more permissions
+- Added more permissions:
    - `AttachFiles`
    - `TTS`
    - `ManageWebhooks`
@@ -625,6 +637,8 @@
 - Added multi-line support for `$textSplit[]`
 - Fixed brackets in `$username`
 
+</details>
+
 # 2019
 
 ## December
@@ -652,8 +666,12 @@
 - Fixed `$banID[]`
 - Preparations for premium points
 
+<details><summary>Previous Updates</summary>
+
 ## November
 - Added `$rolePosition[]`
 - Released translation strings to volunteers
 - Added `kick()` and `ban()` to JS
 - Released new stable version
+
+</details>

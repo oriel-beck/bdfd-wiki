@@ -19,13 +19,13 @@ Used to initiate an awaited command.
 
 ## Syntax
 ```
-$awaitFunc[name;(user ID;channel ID)]
+$awaitFunc[Command name;(User ID;Channel ID)]
 ```
 
 ### Parameters
-- `command name` `(Type: String || Flag: Required)`: The name used inside [`$awaitedCommand[]`](#awaitedcommand) and [`$awaitedCommandError[]`](#awaitedcommanderror) callbacks.
-- `user ID` `(Type: Snowflake || Flag: Vacantable)`: The user the awaited command will trigger for. Uses command author, if `user ID` is not given.
-- `channel ID` `(Type: Snowflake || Flag: Optional)`: The channel where the command will be awaited. Uses current channel, if `channel ID` is not given.
+- `Command name` `(Type: String || Flag: Required)`: The name used inside [`$awaitedCommand[]`](#awaitedcommand) and [`$awaitedCommandError[]`](#awaitedcommanderror) callbacks.
+- `User ID` `(Type: Snowflake || Flag: Vacantable)`: The user the awaited command will trigger for. Uses command author, if `User ID` is not given.
+- `Channel ID` `(Type: Snowflake || Flag: Optional)`: The channel where the command will be awaited. Uses current channel, if `Channel ID` is not given.
 
 ## Example
 ```
@@ -33,8 +33,32 @@ $nomention
 What do you want me to say?
 $awaitFunc[say]
 ```
-![example](https://user-images.githubusercontent.com/113303649/212294420-acf01905-c9f5-4673-99f0-375f9d786f25.png)
 
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    What do you want me to say?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    I love BDFD
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    I love BDFD
+```
+\
 
 # $awaitedCommand
 _Triggered when an awaited command gets responded to._
@@ -43,12 +67,12 @@ _Triggered when an awaited command gets responded to._
 
 ## Syntax
 ```
-$awaitedCommand[name;(filter)]
+$awaitedCommand[Name;(Filter)]
 ```
 
 ### Parameters
-- `name` `(Type: String || Flag: Required)`: The name used in [`$awaitFunc[]`](#awaitfunc) function.
-- `filter` `(Type: String || Flag: Emptiable)`: Used to limit user input ([Supported filters](#supported-filters)). If no filter is provided, it accepts any input.
+- `Name` `(Type: String || Flag: Required)`: The name used in [`$awaitFunc[]`](#awaitfunc) function.
+- `Filter` `(Type: String || Flag: Emptiable)`: Used to limit user input ([Supported filters](#supported-filters)). If no filter is provided, it accepts any input.
 
 ## Example
 ### Without filter
@@ -57,7 +81,33 @@ $awaitedCommand[name;(filter)]
 $nomention
 $message
 ```
-![example](https://user-images.githubusercontent.com/113303649/212084980-10ab6f01-5595-454f-bfe6-a23f8fd64c1e.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    What do you want me to say?
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    I love BDFD
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    I love BDFD
+```
+\
+
 ### With choose filter
 **Trigger: `$awaitedCommand[odd;<yes/no/cancel>]`**
 ```
@@ -86,11 +136,11 @@ _Triggered when an awaited command doesn't match with provided filter._
 
 ## Syntax
 ```
-$awaitedCommandError[name]
+$awaitedCommandError[Name]
 ```
 
 ### Parameters
-- `name` `(Type: String || Flag: Required)`: The name used in [`$awaitFunc[]`](#awaitfunc) function.
+- `Name` `(Type: String || Flag: Required)`: The name used in [`$awaitFunc[]`](#awaitfunc) function.
 
 ## Example
 **Trigger: `$awaitedCommandError[number]`**

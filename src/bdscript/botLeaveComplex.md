@@ -1,23 +1,35 @@
 # $botLeave[]
- Makes the bot leave the server matching the provided [server ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID).
+Forces the bot to leave the server matching the provided [server ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID).
 
 ## Syntax
 ```
-$botLeave[guild ID]
+$botLeave[Guild ID]
 ````
 
 ### Parameters
-- `guild ID` `(Type: Snowflake || Flag: Required)`: The ID of a guild to leave.
+- `Guild ID` `(Type: Snowflake || Flag: Required)`: The ID of the guild to leave.
 
 ## Example
 ```
 $nomention
-$sendMessage[I left out `$serverName[$message]` server]
+$sendMessage[I left out `$serverName[$message]` server.]
 $botLeave[$message]
 ```
 
-![example](https://user-images.githubusercontent.com/113303649/210335691-9d23cfd6-f7e8-4924-8afc-dd3b523ca071.png)
-
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 1009018156494368798
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    I left out <discord-inline-code>BDFD Support</discord-inline-code> server.
+```
+\
 ![example](https://user-images.githubusercontent.com/113303649/210337078-dbdb0539-6f4a-4271-8574-afc43551d0e8.png)
 
 > If you are using **BDScript 2**, put `$botLeave[]` at the very bottom of the code so that the code works correctly i.e:

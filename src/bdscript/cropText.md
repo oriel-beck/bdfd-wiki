@@ -3,18 +3,31 @@ Crops the provided text. If text is cropped then the `ending` is added at the en
 
 ## Syntax
 ```
-$cropText[text;max characters;ending]
+$cropText[Text;Max characters;Ending]
 ```
 
 ### Parameters
-- `text` `(Type: String || Flag: Emptiable)`: The text to crop.
-- `max characters` `(Type: Integer || Flag: Required)`: The maximum amount of characters. Subsequent characters are removed.
-- `ending` `(Type: String || Flag: Emptiable)`: The text to end the cropped text with (if the text was cropped).
+- `Text` `(Type: String || Flag: Emptiable)`: The text to crop.
+- `Max characters` `(Type: Integer || Flag: Required)`: The maximum amount of characters. Subsequent characters are removed.
+- `Ending` `(Type: String || Flag: Emptiable)`: The text to end the cropped text with (if the text was cropped).
 
 ## Example
 ```
 $nomention
-$cropText[$noMentionMessage;100;...]
+$cropText[$message;50;...]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/122798403-8d22f700-d28e-11eb-90c5-4473ed43dd62.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example Hello everyone! This message is very cool. 😎 We hope you enjoy coding in BDFD, bye!
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Hello everyone! This message is very cool. 😎 We ho...
+```

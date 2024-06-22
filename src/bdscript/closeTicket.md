@@ -3,11 +3,11 @@ Deletes the ticket channel (has to be created with `$newTicket`).
 
 ## Syntax
 ```
-$closeTicket[error message]
+$closeTicket[Error message]
 ```
 
 ### Parameters
-- `error message` `(Type: String || Flag: Emptiable)`: The error to return if the channel isn't a ticket.
+- `Error message` `(Type: String || Flag: Emptiable)`: The error to return if the channel isn't a ticket.
 
 ## Example
 ```

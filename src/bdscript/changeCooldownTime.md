@@ -3,14 +3,14 @@ Changes the cooldown metrics. These can be used in cooldown error messages. It c
 
 ## Syntax
 ```
-$changeCooldownTime[days;hours;minutes;seconds]
+$changeCooldownTime[Days;Hours;Minutes;Seconds]
 ```
 
 ### Parameters
-- `days` `(Type: String || Flag: Required)`: The text to replace 'Days' with.
-- `hours` `(Type: String || Flag: Required)`: The text to replace 'Hours' with.
-- `minutes` `(Type: String || Flag: Required)`: The text to replace 'Minutes' with.
-- `seconds` `(Type: String || Flag: Required)`: The text to replace 'Seconds' with.
+- `Days` `(Type: String || Flag: Required)`: The text to replace 'Days' with.
+- `Hours` `(Type: String || Flag: Required)`: The text to replace 'Hours' with.
+- `Minutes` `(Type: String || Flag: Required)`: The text to replace 'Minutes' with.
+- `Seconds` `(Type: String || Flag: Required)`: The text to replace 'Seconds' with.
 
  ### Sub-functions
  
@@ -24,10 +24,36 @@ $changeCooldownTime[days;hours;minutes;seconds]
 ## Example
 ```
 $nomention
-Hello $username!
+Hello $displayName!
 $changeCooldownTime[Days⏰;Hours⏰;Mins🕧;Secs🕧]
 $cooldown[10m;Please wait %time-m%!]
 ```
+``` discord yaml
+- user_id: 729343563401265193
+  username: Nicky
+  color: "#EE7908"
+  content: |
+    !hello
 
-![example](https://user-images.githubusercontent.com/113303649/212069278-c045a1e8-4dba-4a16-a1a5-732bcb5211f1.png)
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  verified: true
+  content: |
+    Hello Nicky!
 
+- user_id: 729343563401265193
+  username: Nicky
+  color: "#EE7908"
+  content: |
+    !hello
+
+- user_id: 566613317972394004
+  username: Wiki Bot
+  color: "#748BD4"
+  bot: true
+  verified: true
+  content: |
+    Please wait 9.9 Mins🕧!
+```

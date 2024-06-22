@@ -2,11 +2,11 @@
 *How Bot Designer For Discord became what it is today.*
 
 ### Who Develops BDFD?
-| Name             | Discord Username      | Position 
-| ---------------- | --------------------- | -------------
-Jakub Tomana       | kubastick             | Owner/Developer
-Mikołaj Radkowski  | _noit                 | Developer
-Bartłomiej Skoczeń | minebarteksa          | Developer
+| Name             | Discord Username        | Position 
+| ---------------- | ----------------------- | -------------
+Jakub Tomana       | [kubastick](https://discordapp.com/users/390515191819010058/)             | Owner/Developer
+Mikołaj Radkowski  | [_noit](https://discordapp.com/users/246604909451935745/)                 | Developer
+Bartłomiej Skoczeń | [minebarteksa](https://discordapp.com/users/154148273307910144/)          | Developer
 
 ### The Company
 *[NilPointer Software](https://nilpointer.software/)* is the company that made *Bot Designer For Discord*. *NilPointer Software*, a start-up focused on providing fast and quality software.

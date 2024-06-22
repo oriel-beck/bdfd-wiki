@@ -1,19 +1,48 @@
 # $channelID[]
-Returns channel ID for the given channel name.
+Returns the channel ID for the given channel name.
 
 ## Syntax
 ```
-$channelID[channel name]
+$channelID[Channel name]
 ```
+
 ### Parameters
-- `channel name` `(Type: String || Flag: Required)`: The name of the channel.
+- `Channel name` `(Type: String || Flag: Required)`: The name of the channel.
+
 ## Example
 ```
 $nomention
 Channel ID: $channelID[$message]
 ```
-![example](https://user-images.githubusercontent.com/113303649/212722828-a31bf8c7-127b-472f-bc12-52cf30bd49d1.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
+  color: "#E67E22"
+  content: |
+    !example main-chat
+- username: BDFD Support
+  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Channel ID: 566370477967147018
+```
 
 > It supports category names.
->
-> ![example](https://user-images.githubusercontent.com/113303649/212723060-6a914e0b-b32a-49d4-9ea2-495cef2cff1d.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example BDFD
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Channel ID: 1009019011545178132
+```

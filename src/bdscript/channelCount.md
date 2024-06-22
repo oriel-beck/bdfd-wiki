@@ -11,4 +11,17 @@ $channelCount
 $nomention
 There are $channelCount channels in this server!
 ```
-![example](https://user-images.githubusercontent.com/69215413/120035531-c38d8f00-bfcc-11eb-963b-ffd4e1e8111d.png)
+
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+      There are 19 channels in this server!
+```

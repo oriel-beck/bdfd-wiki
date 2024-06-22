@@ -14,9 +14,19 @@ $changeUsernameWithID[User ID;New nickname]
 ```
 $nomention
 $argsCheck[>1;Please provide text!]
-$addCmdReactions[✅]
-$changeUsernameWithID[$findUser[$message[1]];$message[2]]
+$addCmdReactions[❤️]
+$changeUsernameWithID[$message[1];$message[2]]
 ```
-![example](https://user-images.githubusercontent.com/113303649/212552342-49a8cd00-cf8c-40c7-abc6-08805d9fc9af.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example 154148273307910144 Owner
+  reactions:
+    - emoji: https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png
+      count: 1
+      reacted: false
+```
 
-> [How `$findUser[]` works?](./findUser.md)
+> [How `$addCmdReactions[]` works?](./addCmdReactions.md)

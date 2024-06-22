@@ -3,15 +3,27 @@ Returns how many words (aka arguments/args) are in the provided text.
 
 ## Syntax
 ```
-$argCount[text]
+$argCount[Text]
 ```
 
 ### Parameters
-- `text` `(Type: String || Flag: Emptiable)`: The text to get word count for.
+- `Text` `(Type: String || Flag: Emptiable)`: The text to get the word count for.
 
 ## Example
 ```
 $nomention
 Word count: $argCount[$message]
 ```
-![example](https://user-images.githubusercontent.com/113303649/209949842-5d62e612-e521-44cf-a5f6-9f226446f58f.png)
+```discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example Hello noit!
+- username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Word count: 2
+```
