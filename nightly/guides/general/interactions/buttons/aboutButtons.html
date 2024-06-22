@@ -192,7 +192,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
 <li><code>link</code> - Redirect button</li>
 </ul>
 <discord-messages>
-    <discord-message author="BDFD Support" role-color="#378afa" bot verified>
+    <discord-message author="BDFD Support" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" role-color="#378afa" bot>
         Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
@@ -215,7 +215,7 @@ Here, are all possible values for the <code>style</code> function argument.</p>
                 <discord-button type="destructive">
                     Danger
                 </discord-button>
-                <discord-button type="destructive" disabled>
+                <discord-button disabled type="destructive">
                     Danger
                 </discord-button>
             </discord-action-row>
@@ -229,14 +229,14 @@ Here, are all possible values for the <code>style</code> function argument.</p>
             </discord-action-row>
         </discord-attachments>
     </discord-message>
-    <discord-message bot author="BDFD Support" role-color="#378afa" verified>
+    <discord-message bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" role-color="#378afa" verified author="BDFD Support">
         Other Buttons:
         <discord-attachments slot="components">
             <discord-action-row>
                 <discord-button type="secondary" url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
-                <discord-button disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/" type="secondary">
+                <discord-button type="secondary" disabled url="https://nilpointer-software.github.io/bdfd-wiki/nightly/">
                     Link
                 </discord-button>
             </discord-action-row>
@@ -263,40 +263,35 @@ Interactive buttons can use every <code>style</code> except <code>link</code>.</
 <h1 id="addbutton"><a class="header" href="#addbutton">$addButton</a></h1>
 <p>Adds a button to the response message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$addButton[new row?;interaction ID/url;label;style;(disable?;emoji;message ID)]
+<pre><code>$addButton[New row?;Interaction ID/url;Label;Style;(Disable?;Emoji;Message ID)]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li>
-<p><code>new row?</code> <code>(Type: Bool || Flag: Required)</code>: If set to <code>yes</code> the button will appear in a new row. If it's set to <code>no</code> the button will appear in the same row as a previous button.</p>
+<p><code>New row?</code> <code>(Type: Bool || Flag: Required)</code>: If set to <code>yes</code> the button will appear in a new row. If it's set to <code>no</code> the button will appear in the same row as a previous button.</p>
 <blockquote>
 <p>A message can have a maximum of 25 buttons (5 rows of 5 buttons).</p>
 </blockquote>
 </li>
 <li>
-<p><code>interaction ID/url</code> <code>(Type: String, URL || Flag: Required)</code>: Depending on the button type, you either set it to an <code>interaction ID</code> which is then used in the <code>$onInteraction[ID]</code> callback or a <code>URL</code> if it's a link button.</p>
+<p><code>Interaction ID/URL</code> <code>(Type: String, URL || Flag: Required)</code>: Depending on the button type, you either set it to an <code>Interaction ID</code> which is then used in the <code>$onInteraction[Interaction ID]</code> or <code>$onInteraction</code> callback or a <code>URL</code> if it's a link button.</p>
 </li>
-<li>
-<p><code>label</code> <code>(Type: String || Flag: Emptiable)</code>: The text visible on the button.</p>
-</li>
-<li>
-<p><code>style</code> <code>(Type: Enum || Flag: Required)</code>: It's used to specify the button's background color. If the button has a link/url you <strong>have to</strong> set this value to <code>link</code>. Check <a href="#button-style">this section</a> for more details.</p>
-</li>
-<li>
-<p><code>disable?</code> <code>(Type: Bool || Flag: Vacantable)</code>:  If set to <code>yes</code> the button can't be pressed. Defaults as <code>no</code>.</p>
-</li>
-<li>
-<p><code>emoji</code> <code>(Type: Emoji || Flag: Vacantable)</code>: Adds an emoji inside the button. Emojis have to be either pasted as <em>unicode</em> or be in the following format <code>&lt;:emoji name:emoji ID&gt;</code>.</p>
-</li>
-<li>
-<p><code>message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Adds a button to the provided message ID. It's important to note that provided message ID author <strong>has to</strong> be the bot.</p>
-</li>
+</ul>
+<blockquote>
+<p>You don't need <code>$onInteraction</code>/<code>$onInteraction[]</code> for URL.</p>
+</blockquote>
+<ul>
+<li><code>Label</code> <code>(Type: String || Flag: Emptiable)</code>: The text visible on the button.</li>
+<li><code>Style</code> <code>(Type: Enum || Flag: Required)</code>: It's used to specify the button's background color. If the button has a link/url you <strong>have to</strong> set this value to <code>link</code>. Check <a href="#button-style">this section</a> for more details.</li>
+<li><code>Disable?</code> <code>(Type: Bool || Flag: Vacantable)</code>:  If set to <code>yes</code> the button can't be pressed. Defaults as <code>no</code>.</li>
+<li><code>Emoji</code> <code>(Type: Emoji || Flag: Vacantable)</code>: Adds an emoji inside the button. Emojis have to be either pasted as <em>unicode</em> or be in the following format <code>&lt;:emoji name:emoji ID&gt;</code>.</li>
+<li><code>message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Adds a button to the provided message ID. It's important to note that provided message ID author <strong>has to</strong> be the bot.</li>
 </ul>
 <blockquote>
 <p>Interactive buttons can't have duplicated <code>ID</code>'s in the same message. So for example, you can't have two buttons with the ID set to <code>test</code>.</p>
 </blockquote>
 <blockquote>
-<p>If <code>url</code> is used in <code>interaction ID/url</code> argument, it <strong>has to</strong> start with <code>http://</code> or <code>https://</code></p>
+<p>If <code>URL</code> is used in <code>Interaction ID/url</code> argument, it <strong>has to</strong> start with <code>http://</code> or <code>https://</code></p>
 </blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
@@ -304,10 +299,10 @@ Hello
 $addButton[no;test;Say hello!;primary;no;]
 </code></pre>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22" author="RainbowKey">
         !example
     </discord-message>
-    <discord-message author="BDFD Support" bot verified role-color="#378afa">
+    <discord-message bot role-color="#378afa" author="BDFD Support" verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png">
         Hello
         <discord-attachments slot="components">
             <discord-action-row>
@@ -321,16 +316,16 @@ $addButton[no;test;Say hello!;primary;no;]
 <h1 id="editbutton"><a class="header" href="#editbutton">$editButton</a></h1>
 <p>Edits an already existing button.</p>
 <h2 id="syntax-1"><a class="header" href="#syntax-1">Syntax</a></h2>
-<pre><code>$editButton[interaction ID/url;label;style;(disable?;emoji;message ID)]
+<pre><code>$editButton[Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
 </code></pre>
 <h3 id="parameters-1"><a class="header" href="#parameters-1">Parameters</a></h3>
 <ul>
-<li><code>interaction ID/url</code> <code>(Type: String, URL || Flag: Required)</code>: Depending on the button type, you either set it to an <code>interaction ID</code> which is then used in the <code>$onInteraction[ID]</code> callback or a <code>URL</code> if it's a link button.</li>
-<li><code>label</code> <code>(Type: String || Flag: Emptiable)</code>: The text visible on the button.</li>
-<li><code>style</code> <code>(Type: Enum || Flag: Required)</code>: It's used to specify the button's background color. If the button has a link/url you <strong>have to</strong> set this value to <code>link</code>. Check <a href="#button-style">this section</a> for more details.</li>
-<li><code>disable?</code> <code>(Type: Bool || Flag: Vacantable)</code>: If set to <code>yes</code> the button can't be pressed. Defaults as <code>no</code>. <em>(Optional)</em></li>
-<li><code>emoji</code> <code>(Type: Emoji || Flag: Vacantable)</code>: Edits an emoji inside the button. Emojis have to be either pasted as <em>unicode</em> or be in the following format <code>&lt;:emoji name:emoji ID&gt;</code>. <em>(Optional)</em></li>
-<li><code>message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Edits a button in a message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot. <em>(Optional)</em></li>
+<li><code>Interaction ID/URL</code> <code>(Type: String, URL || Flag: Required)</code>: Depending on the button type, you either set it to an <code>Interaction ID</code> which is then used in the <code>$onInteraction[Interaction ID]</code> callback or a <code>URL</code> if it's a link button.</li>
+<li><code>Label</code> <code>(Type: String || Flag: Emptiable)</code>: The text visible on the button.</li>
+<li><code>Style</code> <code>(Type: Enum || Flag: Required)</code>: It's used to specify the button's background color. If the button has a link/url you <strong>have to</strong> set this value to <code>link</code>. Check <a href="#button-style">this section</a> for more details.</li>
+<li><code>Disable?</code> <code>(Type: Bool || Flag: Vacantable)</code>: If set to <code>yes</code> the button can't be pressed. Defaults as <code>no</code>. <em>(Optional)</em></li>
+<li><code>Emoji</code> <code>(Type: Emoji || Flag: Vacantable)</code>: Edits an emoji inside the button. Emojis have to be either pasted as <em>unicode</em> or be in the following format <code>&lt;:emoji name:emoji ID&gt;</code>. <em>(Optional)</em></li>
+<li><code>Message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Edits a button in a message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot. <em>(Optional)</em></li>
 </ul>
 <h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
 <h4 id="trigger-oninteractiontest"><a class="header" href="#trigger-oninteractiontest">Trigger: <code>$onInteraction[test]</code></a></h4>
@@ -354,11 +349,11 @@ $removeButtons
 <h1 id="removebuttons-1"><a class="header" href="#removebuttons-1">$removeButtons[]</a></h1>
 <p>Removes all buttons from the specified message.</p>
 <h2 id="syntax-3"><a class="header" href="#syntax-3">Syntax</a></h2>
-<pre><code>$removeButtons[message ID]
+<pre><code>$removeButtons[Message ID]
 </code></pre>
 <h3 id="parameters-2"><a class="header" href="#parameters-2">Parameters</a></h3>
 <ul>
-<li><code>message ID</code> <code>(Type: Snowflake || Flag: Required)</code>: Removes buttons from the message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot.</li>
+<li><code>Message ID</code> <code>(Type: Snowflake || Flag: Required)</code>: Removes buttons from the message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot.</li>
 </ul>
 <h2 id="example-3"><a class="header" href="#example-3">Example</a></h2>
 <pre><code>$nomention
@@ -369,15 +364,15 @@ $removeButtons[$message]
 <h1 id="removecomponent"><a class="header" href="#removecomponent">$removeComponent</a></h1>
 <p>Removes a certain component from a message.</p>
 <h2 id="syntax-4"><a class="header" href="#syntax-4">Syntax</a></h2>
-<pre><code>$removeComponent[interaction ID;(message ID)]
+<pre><code>$removeComponent[Interaction ID/URL;(Message ID)]
 </code></pre>
 <blockquote>
 <p>This function supports <a href="../selectMenus/aboutSelectMenu.html">select-menu</a> and <a href="../buttons/aboutButtons.html">button</a>.</p>
 </blockquote>
 <h3 id="parameters-3"><a class="header" href="#parameters-3">Parameters</a></h3>
 <ul>
-<li><code>interaction ID</code> <code>(Type: String || Flag: Required)</code>: The interaction ID of the button, to remove from the message.</li>
-<li><code>message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Removes the button from the message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot. <em>(Optional)</em></li>
+<li><code>Interaction ID/URL</code> <code>(Type: String || Flag: Required)</code>: The interaction ID of the button, to remove from the message.</li>
+<li><code>Message ID</code> <code>(Type: Snowflake || Flag: Vacantable)</code>: Removes the button from the message with the provided ID. It's important to note that provided message ID author <strong>has to</strong> be the bot. <em>(Optional)</em></li>
 </ul>
 <h2 id="example-4"><a class="header" href="#example-4">Example</a></h2>
 <pre><code>$nomention
