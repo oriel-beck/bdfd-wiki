@@ -1,5 +1,19 @@
 # Changelog
 
+# 2024
+
+## June
+- Added `$ai[]`
+- Added `$aiQuota`
+
+<details><summary>Previous Updates</summary>
+
+## March
+- Fixed that sometimes the bot duplicates its answer
+- Fixed `$onlyForIDs[]` did not work correctly on big nodes
+
+</details>
+   
 # 2023
 
 ## June
