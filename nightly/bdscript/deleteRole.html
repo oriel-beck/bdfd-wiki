@@ -183,14 +183,21 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$onlyPerms[manageroles;❌ You are missing the `MANAGE_ROLES` permission!]
-$argsCheck[&gt;1;Please provide a role to delete!]
-$onlyIf[$findRole[$message]!=;Invalid role!]
 $deleteRole[$findRole[$message]]
-Deleted the role!
+Successfully deleted $roleName[$findRole[$message]]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/111157596/239688806-0699dbf1-3684-4a4a-9cdf-f191ad0b90fd.png" alt="example" /><br />
-<img src="https://user-images.githubusercontent.com/111157596/239688761-3bd88f60-8a5c-48e9-9b23-677b2e4ecd17.png" alt="example" /></p>
+<discord-messages>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" author="RainbowKey" role-color="#E67E22">
+        !example Cool Role
+    </discord-message>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" bot author="BDFD Support" verified role-color="#378afa">
+        Successfully deleted Cool Role
+    </discord-message>
+</discord-messages>
+<p><img src="https://user-images.githubusercontent.com/111157596/239688761-3bd88f60-8a5c-48e9-9b23-677b2e4ecd17.png" alt="example" /></p>
+<blockquote>
+<p>How <a href="./findRole.html"><code>$findRole[]</code></a>, <a href="./roleName.html"><code>$roleName[]</code></a> and <a href="./message.html"><code>$message</code></a> works?</p>
+</blockquote>
 
                     </main>
 

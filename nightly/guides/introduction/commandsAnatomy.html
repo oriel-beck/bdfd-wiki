@@ -181,24 +181,18 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p><img src="https://user-images.githubusercontent.com/69215413/120054230-b092b300-bffc-11eb-805d-16b8b6c41cc1.png" alt="image" /></p>
 <h4 id="output"><a class="header" href="#output">Output</a></h4>
-<pre><code>- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !help
-- user_id: 1009018156494368798
-  username: BDFD Support
-  color: "#378afa"
-  bot: true
-  verified: true
-  embed:
-    title: Help
-    description: |
-      !command1 - description... 
-      !command2 - description... 
-      etc
-</code></pre>
+<discord-messages>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22" author="RainbowKey">
+        !help
+    </discord-message>
+    <discord-message role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" author="BDFD Support" bot verified>
+        <discord-embed slot="embeds" embed-title="Help">
+            <discord-embed-description slot="description">
+                !command1 - description... <br />!command2 - description... <br />etc
+            </discord-embed-description>
+        </discord-embed>
+    </discord-message>
+</discord-messages>
 
                     </main>
 
