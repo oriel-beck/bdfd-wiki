@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Changelog - Bot Designer for Discord - Wiki</title>
+        <title>Changelog - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="./src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -274,7 +275,7 @@
 <li>Added <code>$getChannelVar[]</code></li>
 <li>Added <code>$resetChannelVar[]</code></li>
 <li>Added <code>channel</code> option to <code>$variablesCount[]</code></li>
-<li>Fixed BDScript 2's escaping not working in some cases</li>
+<li>Fixed BDScript 2’s escaping not working in some cases</li>
 </ul>
 <h2 id="october"><a class="header" href="#october">October</a></h2>
 <ul>
@@ -322,7 +323,7 @@
 <li>Renamed <code>$customImage[]</code> argument to <code>Custom image tag</code></li>
 <li>Added <code>$hypesquad[]</code></li>
 <li>Added <code>$dmChannelID[]</code></li>
-<li>Fixed the app's max choices limit</li>
+<li>Fixed the app’s max choices limit</li>
 <li>Fixed <code>$registerGuildCommands[]</code> removing previously registered commands</li>
 <li>Fixed <code>$reply</code> not working in DMs</li>
 <li>Made it possible to return milliseconds and nanoseconds in <code>$getTimestamp[]</code></li>
@@ -365,7 +366,7 @@
 <h2 id="april-1"><a class="header" href="#april-1">April</a></h2>
 <ul>
 <li>Added <code>"return ID of the ticket message"</code> argument to <code>$newTicket[]</code></li>
-<li>Fixed disappearing slash commands from the app's state</li>
+<li>Fixed disappearing slash commands from the app’s state</li>
 </ul>
 <h2 id="march-2"><a class="header" href="#march-2">March</a></h2>
 <ul>
@@ -423,7 +424,7 @@
 <li>Added <code>guildID</code> argument to <code>$getUserVar[]</code> and <code>$setUserVar[]</code></li>
 <li>Fixed the issue with some bots not starting with invalid intents enabled</li>
 <li>Fixed the role cache</li>
-<li>Slash command's option description is now required</li>
+<li>Slash command’s option description is now required</li>
 <li>Added <code>$shardID[]</code></li>
 <li>Added sharding</li>
 <li>Improved interaction handling</li>
@@ -474,7 +475,7 @@
 <li>Made <code>$ephemeral</code> work with the buttons</li>
 <li>Fixed global variables not getting saved</li>
 <li>Fixed <code>$deletecommand</code> not getting catched by <code>$try</code> block</li>
-<li>Made it possible to open function's wiki article from the functions list</li>
+<li>Made it possible to open function’s wiki article from the functions list</li>
 </ul>
 <h2 id="september-1"><a class="header" href="#september-1">September</a></h2>
 <ul>
@@ -524,7 +525,7 @@
 <li>Fixed a bug with block-functions adding extra new line in BDScript 2</li>
 <li>Fixed and optimised <code>$setVar[]</code></li>
 <li>Added <code>$sendEmbedMessage[]</code></li>
-<li>Fixed condition parsing in <code>$if[]</code> for the normal BDScript and BDScript Unstable (BDScript 2 didn't have any issues)</li>
+<li>Fixed condition parsing in <code>$if[]</code> for the normal BDScript and BDScript Unstable (BDScript 2 didn’t have any issues)</li>
 <li>Made command saving faster</li>
 </ul>
 <h2 id="july-1"><a class="header" href="#july-1">July</a></h2>
@@ -739,7 +740,7 @@
 <li>Added <code>$joinSplitText[]</code></li>
 <li>Added <code>$getInviteInfo[]</code></li>
 <li>Added <code>$guildID[]</code></li>
-<li>Fixed <code>$numberSeparator[]</code> in the bot's status</li>
+<li>Fixed <code>$numberSeparator[]</code> in the bot’s status</li>
 <li><code>$roleID[]</code> and <code>$channelID[]</code> no longer stop code execution</li>
 <li>Enabled BDScript Unstable for callbacks</li>
 <li>Added <code>$getTextSplitLength</code></li>
@@ -819,14 +820,14 @@
 <li>Added <code>$modifyRolePerms[]</code></li>
 <li>Added <code>$isUserDMEnabled[]</code></li>
 <li>Added new option to <code>$mentioned[]</code></li>
-<li>When <code>userID</code> is not provided in <code>$discriminator[]</code>, the author's ID will be used</li>
+<li>When <code>userID</code> is not provided in <code>$discriminator[]</code>, the author’s ID will be used</li>
 <li>Added <code>$argCount[]</code></li>
 <li>Added <code>$roleExists[]</code> and <code>$roleExists[]</code></li>
 <li>Added <code>$varExistError[]</code></li>
 <li>Removed permissions check for <code>$kick[]</code> function</li>
 <li>Fixed brackets issue in <code>$message</code> and <code>$noMentionMessage</code></li>
 <li>Fixed <code>$globalUserLeaderboard[]</code></li>
-<li><code>$repeatMessage[]</code> won't send an error when there is <code>0</code> provided</li>
+<li><code>$repeatMessage[]</code> won’t send an error when there is <code>0</code> provided</li>
 </ul>
 <h2 id="january-3"><a class="header" href="#january-3">January</a></h2>
 <ul>
@@ -838,14 +839,14 @@
 <li>Removed <code>#</code> from <code>$getRoleColor[]</code></li>
 <li>Added possibility of adding custom error message to <code>$suppressErrors[]</code></li>
 <li>Added <code>$embedSuppressErrors[]</code></li>
-<li>Added <code>$getServerVar[]</code> in command's name for premium bots</li>
+<li>Added <code>$getServerVar[]</code> in command’s name for premium bots</li>
 <li>Added custom separators to <code>$numberSeparator[]</code></li>
 <li>Fixed issue with <code>+</code> and <code>-</code> in <code>$numberSeparator[]</code></li>
 <li>iOS release</li>
 <li>Added <code>$isBot[]</code></li>
 <li>Added <code>userID</code> option to <code>$takeRole[]</code></li>
 <li>Fixed problems with timezones</li>
-<li><code>@everyone</code> role shows up now when it's a highest/lowest role in <code>$highestRole/$lowestRole</code></li>
+<li><code>@everyone</code> role shows up now when it’s a highest/lowest role in <code>$highestRole/$lowestRole</code></li>
 <li><code>@everyone</code> role now works in <code>$rolePosition[]</code></li>
 <li>Added multi-line support for <code>$replaceText[]</code></li>
 <li>Fixed no errors in <code>$roleID[]</code></li>

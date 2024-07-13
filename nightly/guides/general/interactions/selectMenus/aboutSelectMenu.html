@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>About Select Menu - Bot Designer for Discord - Wiki</title>
+        <title>About Select Menu - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../../../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,18 +169,18 @@
                             <script src="../../../../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="select-menu"><a class="header" href="#select-menu">Select Menu</a></h1>
-<p>In this section you'll learn how to use the select menu component.</p>
+<p>In this section you’ll learn how to use the select menu component.</p>
 <p><img src="https://user-images.githubusercontent.com/70456337/194143249-eb32bed6-5fc9-4d7b-b88c-65b37dfcbfc9.png" alt="Preview 1" />
 <img src="https://user-images.githubusercontent.com/70456337/194143111-bf128046-3428-4226-840d-9ea4b0569677.png" alt="Preview 2" /></p>
 <h2 id="creating-a-select-menu"><a class="header" href="#creating-a-select-menu">Creating a Select Menu</a></h2>
 <pre><code>$newSelectMenu[Menu ID;Min;Max;(Placeholder;Message ID)]
 </code></pre>
 <ul>
-<li><code>Menu ID</code> - it's used for <code>$onInteraction[ID]</code> callback. It works the same way as <a href="../buttons/aboutButtons.html">buttons</a>.</li>
+<li><code>Menu ID</code> - it’s used for <code>$onInteraction[ID]</code> callback. It works the same way as <a href="../buttons/aboutButtons.html">buttons</a>.</li>
 <li><code>Min</code> - minimum amount of values that can be selected.</li>
 <li><code>Max</code> - maximum amount of values that can be selected.</li>
-<li><code>Placeholder</code> - it's a text that appears if no option is selected.</li>
-<li><code>Message ID</code> - ID of a message that should have select menu added to it. By default it's the bot's response.</li>
+<li><code>Placeholder</code> - it’s a text that appears if no option is selected.</li>
+<li><code>Message ID</code> - ID of a message that should have select menu added to it. By default it’s the bot’s response.</li>
 </ul>
 <h2 id="adding-an-option"><a class="header" href="#adding-an-option">Adding an Option</a></h2>
 <pre><code>$addSelectMenuOption[Menu option ID;Label;Value;Description;(Default;Emoji;Message ID)]
@@ -187,7 +188,7 @@
 <ul>
 <li><code>Menu option ID</code> - it has to be the same as the ID used in <code>$newSelectMenu[]</code>.</li>
 <li><code>Label</code> - the name of the option.</li>
-<li><code>Value</code> - it's the data that gets passed to <code>$onInteraction[]</code> callback. <strong>The value has to be unique in the select menu!</strong></li>
+<li><code>Value</code> - it’s the data that gets passed to <code>$onInteraction[]</code> callback. <strong>The value has to be unique in the select menu!</strong></li>
 <li><code>Description</code> - it shows up under the <code>label</code>.</li>
 <li><code>Default</code> - should the option be selected by default. <strong>There can be only one default option!</strong></li>
 <li><code>Emoji</code> - it shows up next to the <code>label</code>.</li>

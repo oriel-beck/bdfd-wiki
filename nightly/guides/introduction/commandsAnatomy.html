@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Commands Anatomy - Bot Designer for Discord - Wiki</title>
+        <title>Commands Anatomy - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -170,7 +171,7 @@
                         <h1 id="commands-anatomy"><a class="header" href="#commands-anatomy">Commands Anatomy</a></h1>
 <p>There are 3 main components to commands, these are: Name, Trigger and Code.</p>
 <h3 id="command-names"><a class="header" href="#command-names">Command Names</a></h3>
-<p>Think of this like a note. Command names don't impact your command at all, but they can help you find commands within the app. You can leave this field empty if you choose.</p>
+<p>Think of this like a note. Command names don’t impact your command at all, but they can help you find commands within the app. You can leave this field empty if you choose.</p>
 <p><img src="https://user-images.githubusercontent.com/69215413/120053425-14ff4380-bff8-11eb-9620-bb35694a4cfa.png" alt="image" /></p>
 <h3 id="command-triggers"><a class="header" href="#command-triggers">Command Triggers</a></h3>
 <p>What the user types to run the command. Triggers should contain both a prefix (e.g <code>!</code>) and the actual command name (like <code>help</code>). This combines to <code>!help</code>. Do not include any spaces at the end of the trigger. Triggers are case sensitive (unless the premium function: <a href="../../premium/ignoreTriggerCase.html"><code>$ignoreTriggerCase</code></a> is used in the command code). You can use <a href="../../callbacks/introduction.html">callbacks</a> in this field.</p>
@@ -182,10 +183,10 @@
 <p><img src="https://user-images.githubusercontent.com/69215413/120054230-b092b300-bffc-11eb-805d-16b8b6c41cc1.png" alt="image" /></p>
 <h4 id="output"><a class="header" href="#output">Output</a></h4>
 <discord-messages>
-    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22" author="RainbowKey">
         !help
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" role-color="#378afa" verified bot author="BDFD Support">
+    <discord-message verified avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" bot author="BDFD Support" role-color="#378afa">
         <discord-embed slot="embeds" embed-title="Help">
             <discord-embed-description slot="description">
                 !command1 - description... <br />!command2 - description... <br />etc

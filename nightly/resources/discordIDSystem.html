@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Discord&#x27;s ID System - Bot Designer for Discord - Wiki</title>
+        <title>Discord&#x27;s ID System - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -167,16 +168,16 @@
                         <nav class="breadcrumb">
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
-                        <h1 id="discords-id-system"><a class="header" href="#discords-id-system">Discord's ID System</a></h1>
-<p>Discord's ID System allows bot's to manage and use IDs to get/edit object data <em>(e.g. returning user's name, deleting a role etc).</em></p>
-<h3 id="whats-an-id"><a class="header" href="#whats-an-id">What's an ID?</a></h3>
-<p>An ID is a Discord object identifier. Let's break this down:</p>
+                        <h1 id="discords-id-system"><a class="header" href="#discords-id-system">Discord’s ID System</a></h1>
+<p>Discord’s ID System allows bot’s to manage and use IDs to get/edit object data <em>(e.g. returning user’s name, deleting a role etc).</em></p>
+<h3 id="whats-an-id"><a class="header" href="#whats-an-id">What’s an ID?</a></h3>
+<p>An ID is a Discord object identifier. Let’s break this down:</p>
 <ul>
-<li>An 'object' refers to a Discord channel, role, user, server/guild, etc.</li>
-<li>An 'identifier' (typically called 'ID') refers to the multi-digit number that the object belongs to.</li>
+<li>An ‘object’ refers to a Discord channel, role, user, server/guild, etc.</li>
+<li>An ‘identifier’ (typically called ‘ID’) refers to the multi-digit number that the object belongs to.</li>
 </ul>
 <h3 id="enabling-developer-mode"><a class="header" href="#enabling-developer-mode">Enabling Developer Mode</a></h3>
-<p>In order to access and copy IDs in the Discord client, you must enable developer mode. Here's how:</p>
+<p>In order to access and copy IDs in the Discord client, you must enable developer mode. Here’s how:</p>
 <ul>
 <li>
 <p><strong>Desktop</strong></p>
@@ -191,12 +192,12 @@
 </li>
 </ul>
 <h3 id="finding-ids"><a class="header" href="#finding-ids">Finding IDs</a></h3>
-<p><em>Where do I find these 'IDs'?</em></p>
-<p>You can use '<a href="#functions-that-return-ids">Functions That Return IDs</a>' to retrieve IDs.</p>
-<p>If you want to get IDs using your client, check out <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">Discord's full guide on getting IDs!</a></p>
+<p><em>Where do I find these ‘IDs’?</em></p>
+<p>You can use ‘<a href="#functions-that-return-ids">Functions That Return IDs</a>’ to retrieve IDs.</p>
+<p>If you want to get IDs using your client, check out <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">Discord’s full guide on getting IDs!</a></p>
 <h3 id="using-ids-in-commands"><a class="header" href="#using-ids-in-commands">Using IDs in Commands</a></h3>
 <p>There are a lot of functions that use IDs. Like, <code>$deleteChannels</code>, <code>$modifyRole</code> <code>$banID</code>, and many more.</p>
-<p>Let's use <code>$deleteChannels</code> for this example. In order to delete a channel, we need the channel's ID. Here's how <code>$deleteChannels</code> could look:</p>
+<p>Let’s use <code>$deleteChannels</code> for this example. In order to delete a channel, we need the channel’s ID. Here’s how <code>$deleteChannels</code> could look:</p>
 <pre><code>$deleteChannels[320949943877437847]
 $c[Deletes the provided custom channel ID.]
 
@@ -207,14 +208,14 @@ $deleteChannels[$mentionedChannels[1]]
 $c[Deletes the mentioned channel.]
 </code></pre>
 <blockquote>
-<p>⚠️ Be careful not to mix up ID types. For example, you can't do <code>$deleteChannels[$authorID]</code>. This is because <code>$authorID</code> returns a user ID, not a channel ID.</p>
+<p>⚠️ Be careful not to mix up ID types. For example, you can’t do <code>$deleteChannels[$authorID]</code>. This is because <code>$authorID</code> returns a user ID, not a channel ID.</p>
 </blockquote>
 <h3 id="functions-that-return-ids"><a class="header" href="#functions-that-return-ids">Functions That Return IDs</a></h3>
 <ul>
 <li><code>$authorID</code>/<code>$userID</code>/<code>$roleID</code>/<code>$channelID</code></li>
 <li><code>$findUser</code>/<code>$findChannel</code>/<code>$findRole</code></li>
 <li><code>$mentioned</code>/<code>$mentionedChannels</code>/<code>$mentionedRoles</code></li>
-<li>... <em>(a few others)</em></li>
+<li>… <em>(a few others)</em></li>
 </ul>
 <h3 id="using-ids-for-mentions"><a class="header" href="#using-ids-for-mentions">Using IDs For Mentions</a></h3>
 <ul>
@@ -234,7 +235,7 @@ $c[Deletes the mentioned channel.]
 <li>Subcommand group - <code>&lt;/name subcommandGroup subcommandName:commandID&gt;</code></li>
 </ul>
 </li>
-<li>Mentioning a Guild - Guilds can't be mentioned.</li>
+<li>Mentioning a Guild - Guilds can’t be mentioned.</li>
 </ul>
 <blockquote>
 <p>📝 Non-bots can use IDs to mention objects too!</p>

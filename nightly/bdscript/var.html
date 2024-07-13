@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$var - Bot Designer for Discord - Wiki</title>
+        <title>$var - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -169,9 +170,9 @@
                         </nav>
                         <h1 id="var"><a class="header" href="#var">$var</a></h1>
 <p>Creates a temporary variable.</p>
-<p>Unlike, it's counterpart variables (i.e <a href="./setVar.html"><code>$setVar</code></a>, <a href="./setUserVar.html"><code>$setUserVar</code></a> etc.) which needs you to create a variable in the app, <a href="./var.html"><code>$var[]</code></a> doesn't require you to do that.
-Instead, it creates the variable automatically during it's runtime and gets deleted once the command execution terminates.</p>
-<p>The data stored in the temporary variable can only be retrieved during its execution period and is removed once it's finished.</p>
+<p>Unlike, it’s counterpart variables (i.e <a href="./setVar.html"><code>$setVar</code></a>, <a href="./setUserVar.html"><code>$setUserVar</code></a> etc.) which needs you to create a variable in the app, <a href="./var.html"><code>$var[]</code></a> doesn’t require you to do that.
+Instead, it creates the variable automatically during it’s runtime and gets deleted once the command execution terminates.</p>
+<p>The data stored in the temporary variable can only be retrieved during its execution period and is removed once it’s finished.</p>
 <blockquote>
 <p>📌 This function can only be used in <code>BDScript 2</code> script language.</p>
 </blockquote>
@@ -184,7 +185,7 @@ Instead, it creates the variable automatically during it's runtime and gets dele
 <li><code>Value</code> <code>(Type: String || Flag: Vacantable)</code>: The data to store</li>
 </ul>
 <blockquote>
-<p>📌 To retrieve the temporary stored value, type <code>$var[Name]</code>, where <em>"Name"</em> is the temporary variable name.</p>
+<p>📌 To retrieve the temporary stored value, type <code>$var[Name]</code>, where <em>“Name”</em> is the temporary variable name.</p>
 </blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention

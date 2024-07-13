@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Embed Indexes - Bot Designer for Discord - Wiki</title>
+        <title>Embed Indexes - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,14 +169,14 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="embed-indexes"><a class="header" href="#embed-indexes">Embed Indexes</a></h1>
-<p>If you look around BDFD embed functions (eg. <a href="../bdscript/title.html"><code>$title</code></a>, <a href="../bdscript/footer.html"><code>$footer</code></a>, <a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> etc.). You'll see an argument called <code>index</code>. This argument is used to create multi-embeds.</p>
+<p>If you look around BDFD embed functions (eg. <a href="../bdscript/title.html"><code>$title</code></a>, <a href="../bdscript/footer.html"><code>$footer</code></a>, <a href="../bdscript/addTimestamp.html"><code>$addTimestamp</code></a> etc.). You’ll see an argument called <code>index</code>. This argument is used to create multi-embeds.</p>
 <blockquote>
 <p>📝 Discord supports creating upto a maximum of 10 embeds per bot message.</p>
 </blockquote>
 <h2 id="creating-multi-embeds"><a class="header" href="#creating-multi-embeds">Creating Multi-Embeds</a></h2>
 <p>By default, the <code>index</code> is set to <code>1</code> <em>(the first embed)</em>. To create a second embed, you have to write <code>2</code> in <code>index</code> argument and so on. You can specify any number between <code>1</code> to <code>10</code> in <code>index</code> argument.</p>
 <blockquote>
-<p>📝 Total character length of the overall response should not exceed more than 6,000. If it does, the bot won't send the message.</p>
+<p>📝 Total character length of the overall response should not exceed more than 6,000. If it does, the bot won’t send the message.</p>
 </blockquote>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code>$nomention

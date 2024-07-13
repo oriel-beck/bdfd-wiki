@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$defer - Bot Designer for Discord - Wiki</title>
+        <title>$defer - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -174,7 +175,7 @@
 </code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p>Sometimes the code we write needs more time to execute fully.
-In normal commands, this isn't a problem, but interactions are different.
+In normal commands, this isn’t a problem, but interactions are different.
 Interactions have a 3-second long timeout in which our code needs to respond in.
 The <code>$defer</code> function solves this by telling Discord to wait a bit longer for our response.
 With <code>$defer</code> we have 15 minutes to finish executing our code.</p>
@@ -191,7 +192,7 @@ $description[$getEmbedData[$channelID;$message[message-id];2;description];2]
 $footer[$getEmbedData[$channelID;$message[message-id];2;footer];2]
 $color[$getEmbedData[$channelID;$message[message-id];2;color];2]
 </code></pre>
-<p>Let's execute it.</p>
+<p>Let’s execute it.</p>
 <h3 id="without-defer"><a class="header" href="#without-defer">Without <code>$defer</code></a></h3>
 <p><img src="https://user-images.githubusercontent.com/70456337/189966580-203e3626-02e5-47a6-a649-07ff55079414.gif" alt="Without" /></p>
 <h3 id="with-defer"><a class="header" href="#with-defer">With <code>$defer</code></a></h3>

@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>JSON Functions - Bot Designer for Discord - Wiki</title>
+        <title>JSON Functions - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,7 +169,7 @@
                             <script src="../../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="json-functions"><a class="header" href="#json-functions">JSON Functions</a></h1>
-<p>Before you read this guide, you should be familiar with what JSON is and where and how it's being used.<br />
+<p>Before you read this guide, you should be familiar with what JSON is and where and how it’s being used.<br />
 You can familiarize yourself with JSON by reading a tutorial on <a href="https://www.w3schools.com/js/js_json_intro.asp">W3Schools</a>.</p>
 <blockquote>
 <p>This guide will utilize <a href="../other/characterEscaping.html">Character Escaping</a> and the <a href="../../bdscript/optOff.html"><code>$optOff</code></a> function.</p>
@@ -188,7 +189,7 @@ This function parses a JSON string into an object which can then be used by othe
 <h2 id="json"><a class="header" href="#json">$json</a></h2>
 <p><code>$json</code> function retrieves JSON values from a specified key in the current JSON object.</p>
 <blockquote>
-<p>The <code>$json</code> function will return an empty string if the value is null, the key doesn't exist, no <a href="#jsonparse"><code>$jsonParse</code></a> or <a href="#jsonset"><code>$jsonSet</code></a> function was executed, or <a href="#jsonclear"><code>$jsonClear</code></a> was executed.</p>
+<p>The <code>$json</code> function will return an empty string if the value is null, the key doesn’t exist, no <a href="#jsonparse"><code>$jsonParse</code></a> or <a href="#jsonset"><code>$jsonSet</code></a> function was executed, or <a href="#jsonclear"><code>$jsonClear</code></a> was executed.</p>
 </blockquote>
 <h3 id="syntax-1"><a class="header" href="#syntax-1">Syntax</a></h3>
 <pre><code>$json[Key;...]
@@ -304,7 +305,7 @@ Balance key was set to: $json[balance]
 <p><img src="https://user-images.githubusercontent.com/70456337/216845276-62748993-567a-4022-bf59-69a77a37bc32.png" alt="" /></p>
 </li>
 </ul>
-<p>If we set this value as a number manually, we'll encounter issues.</p>
+<p>If we set this value as a number manually, we’ll encounter issues.</p>
 <pre><code>$nomention
 $jsonParse[{
     "balance": 788895455566645444567
@@ -427,7 +428,7 @@ $jsonStringify
 </code></pre>
 <h4 id="parameters-6"><a class="header" href="#parameters-6">Parameters</a></h4>
 <ul>
-<li><code>Indent length</code> <code>(Type: Integer || Flag: Required)</code>: The length of the indentation. Usually it's <code>2</code> or <code>4</code>.</li>
+<li><code>Indent length</code> <code>(Type: Integer || Flag: Required)</code>: The length of the indentation. Usually it’s <code>2</code> or <code>4</code>.</li>
 </ul>
 <h3 id="example-5"><a class="header" href="#example-5">Example</a></h3>
 <pre><code>$nomention
@@ -671,7 +672,7 @@ After reversing:
 <h2 id="jsonjoinarray"><a class="header" href="#jsonjoinarray">$jsonJoinArray</a></h2>
 <p><code>$jsonJoinArray</code> function joins a JSON array under the specified key with the given separator.</p>
 <blockquote>
-<p>The <code>$jsonJoinArray</code> function will return an empty string if the value is null, the key doesn't exist, no <a href="#jsonparse"><code>$jsonParse</code></a> or <a href="#jsonset"><code>$jsonSet</code></a> function was executed, or <a href="#jsonclear"><code>$jsonClear</code></a> was executed.</p>
+<p>The <code>$jsonJoinArray</code> function will return an empty string if the value is null, the key doesn’t exist, no <a href="#jsonparse"><code>$jsonParse</code></a> or <a href="#jsonset"><code>$jsonSet</code></a> function was executed, or <a href="#jsonclear"><code>$jsonClear</code></a> was executed.</p>
 </blockquote>
 <h3 id="syntax-18"><a class="header" href="#syntax-18">Syntax</a></h3>
 <pre><code>$jsonJoinArray[Key;...;Separator]

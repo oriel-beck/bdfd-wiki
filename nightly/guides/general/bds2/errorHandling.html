@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Error Handling - Bot Designer for Discord - Wiki</title>
+        <title>Error Handling - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -203,7 +204,7 @@ $endtry
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/70456337/194721708-b8062ac5-7ef3-48af-b412-1d66381add44.png" alt="Function Error" /></p>
 <h3 id="limiter-error"><a class="header" href="#limiter-error">Limiter Error</a></h3>
-<p>As a way to use Error Handling with Limiter Errors, we'll use <code>$cooldown[]</code>. With the help of Error Handling, we can make a nice cooldown error message.</p>
+<p>As a way to use Error Handling with Limiter Errors, we’ll use <code>$cooldown[]</code>. With the help of Error Handling, we can make a nice cooldown error message.</p>
 <p>To handle only the error of our limiter, we will use a <a href="../../../bdscript/var.html">temporary variable</a> and <a href="../ifStatements.html">if statements</a>.
 If <code>$cooldown[]</code> returns an error, the value of the temporary variable will be set to <code>true</code> (in which case our nice error message will be sent).</p>
 <blockquote>

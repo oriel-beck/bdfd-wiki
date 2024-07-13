@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Awaited Reactions - Bot Designer for Discord - Wiki</title>
+        <title>Awaited Reactions - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -171,42 +172,42 @@
 <p><em>(for premium bots)</em></p>
 <p><strong>Awaited reactions</strong> are similar to <a href="../guides/awaitedCommands.html">awaited commands</a>. Unlike awaited commands which wait for a message, they wait for a reaction instead.</p>
 <discord-messages>
-    <discord-message role-color="#EE7908" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" author="Nicky">
-        accept
-    </discord-message>
-    <discord-message role-color="#748BD4" verified bot avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot">
-        <discord-embed slot="embeds">
-            <discord-embed-description slot="description">
-                Do you accept?
-            </discord-embed-description>
-        </discord-embed>
-        <discord-reactions slot="reactions">
-            <discord-reaction name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" reacted count="2">
-            </discord-reaction>
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="1" name=":x:">
-            </discord-reaction>
-        </discord-reactions>
-    </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" verified>
-        Accepted
-    </discord-message>
     <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png">
         accept
     </discord-message>
-    <discord-message verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" role-color="#748BD4" bot author="Wiki Bot">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" bot author="Wiki Bot" verified role-color="#748BD4">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 Do you accept?
             </discord-embed-description>
         </discord-embed>
         <discord-reactions slot="reactions">
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" count="1" name=":white_check_mark:">
+            <discord-reaction reacted count="2" name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
             </discord-reaction>
-            <discord-reaction name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="2" reacted>
+            <discord-reaction count="1" name=":x:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" role-color="#748BD4" bot verified>
+    <discord-message verified author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" bot role-color="#748BD4">
+        Accepted
+    </discord-message>
+    <discord-message author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" role-color="#EE7908">
+        accept
+    </discord-message>
+    <discord-message bot author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" role-color="#748BD4" verified>
+        <discord-embed slot="embeds">
+            <discord-embed-description slot="description">
+                Do you accept?
+            </discord-embed-description>
+        </discord-embed>
+        <discord-reactions slot="reactions">
+            <discord-reaction count="1" name=":white_check_mark:" emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
+            </discord-reaction>
+            <discord-reaction count="2" name=":x:" reacted emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png">
+            </discord-reaction>
+        </discord-reactions>
+    </discord-message>
+    <discord-message role-color="#748BD4" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" bot author="Wiki Bot" verified>
         Declined
     </discord-message>
 </discord-messages>
@@ -222,12 +223,12 @@
 </code></pre>
 <h4 id="parameters"><a class="header" href="#parameters">Parameters</a></h4>
 <ul>
-<li><code>Command name</code> <code>(Type: String || Flag: Required)</code>: It's the name which will be used inside the <code>$reaction[]</code> callback.</li>
+<li><code>Command name</code> <code>(Type: String || Flag: Required)</code>: It’s the name which will be used inside the <code>$reaction[]</code> callback.</li>
 <li><code>Reaction</code> <code>(Type: Emoji || Flag: Required)</code>: It awaits the given emoji. Emoji must be either in Unicode or in Discord emoji ID format.</li>
 </ul>
 <blockquote>
-<p>📝 You can group reactions by specifying more <em>"command names"</em> and <em>"reactions"</em> in <code>$awaitReactions[]</code>.</p>
-<p>⚠️ In group reactions, when one reaction is used, the others stop working i.e let's say, a command awaits two reactions (✔️ &amp; ❌). If the user reacts ✔️ then ❌ stops working.</p>
+<p>📝 You can group reactions by specifying more <em>“command names”</em> and <em>“reactions”</em> in <code>$awaitReactions[]</code>.</p>
+<p>⚠️ In group reactions, when one reaction is used, the others stop working i.e let’s say, a command awaits two reactions (✔️ &amp; ❌). If the user reacts ✔️ then ❌ stops working.</p>
 </blockquote>
 <h2 id="reaction"><a class="header" href="#reaction">$reaction[]</a></h2>
 <p><code>$reaction[]</code> is a <a href="../callbacks/introduction.html">callback</a>. It gets triggered whenever an awaited reaction occurs.</p>
@@ -236,7 +237,7 @@
 </code></pre>
 <h4 id="parameters-1"><a class="header" href="#parameters-1">Parameters</a></h4>
 <ul>
-<li><code>Name</code> <code>(Type: String || Flag: Required)</code>: It's the value which is used in the <em>"command name"</em> argument of <code>$awaitReactions[]</code>.</li>
+<li><code>Name</code> <code>(Type: String || Flag: Required)</code>: It’s the value which is used in the <em>“command name”</em> argument of <code>$awaitReactions[]</code>.</li>
 </ul>
 <h2 id="usedemoji"><a class="header" href="#usedemoji">$usedEmoji</a></h2>
 <p>This function is used to return the emoji which was triggered in the <code>$reaction[]</code> command.</p>
@@ -248,23 +249,23 @@
 <img src="https://user-images.githubusercontent.com/95774950/183701030-c82a8744-9dff-4ad9-83b5-2aa64f45cc59.png" alt="Screenshot_20220809_194754" />
 <img src="https://user-images.githubusercontent.com/95774950/183701074-395c4770-8439-4441-a0ad-5c69ae9cded4.png" alt="Screenshot_20220809_194805" /></p>
 <discord-messages>
-    <discord-message role-color="#EE7908" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" author="Nicky">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" role-color="#EE7908" author="Nicky">
         accept
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot" bot role-color="#748BD4" verified>
+    <discord-message verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot" bot role-color="#748BD4">
         <discord-embed slot="embeds">
             <discord-embed-description slot="description">
                 Do you accept?
             </discord-embed-description>
         </discord-embed>
         <discord-reactions slot="reactions">
-            <discord-reaction count="2" name=":white_check_mark:" reacted emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png">
+            <discord-reaction reacted emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png" count="2" name=":white_check_mark:">
             </discord-reaction>
-            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" name=":x:" count="1">
+            <discord-reaction emoji="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png" count="1" name=":x:">
             </discord-reaction>
         </discord-reactions>
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" verified author="Wiki Bot" bot role-color="#748BD4">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" bot role-color="#748BD4" author="Wiki Bot" verified>
         Accepted ✅
     </discord-message>
 </discord-messages>

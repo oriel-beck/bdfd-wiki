@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$slowmode - Bot Designer for Discord - Wiki</title>
+        <title>$slowmode - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -170,7 +171,7 @@
                         <h1 id="slowmode"><a class="header" href="#slowmode">$slowmode</a></h1>
 <p>Sets a slowmode for the provided channel.</p>
 <blockquote>
-<p>With slowmode enabled in a channel, it will limit the number of messages a user is able to send in a channel based on a timed cooldown. <code>$slowmode[]</code> is used to change a channel's slowmode using a bot.</p>
+<p>With slowmode enabled in a channel, it will limit the number of messages a user is able to send in a channel based on a timed cooldown. <code>$slowmode[]</code> is used to change a channel’s slowmode using a bot.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$slowmode[Channel ID;Slowmode time]
@@ -183,7 +184,7 @@
 <li>
 <p><code>Slowmode time</code> <code>(Type: Duration || Flag: Required)</code>: The new slowmode delay <em>(e.g. <code>5</code>, <code>10s</code>, <code>40m</code>, <code>1h</code>, etc)</em>. Use <code>0</code>/<code>0s</code> to disable the slowmode.</p>
 <blockquote>
-<p>🧙‍♂️ Slowmode time can't be set over 6 hours/21600 seconds.</p>
+<p>🧙‍♂️ Slowmode time can’t be set over 6 hours/21600 seconds.</p>
 </blockquote>
 </li>
 </ul>

@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>About BDScript 2 - Bot Designer for Discord - Wiki</title>
+        <title>About BDScript 2 - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -170,9 +171,9 @@
                         <h1 id="bdscript-2"><a class="header" href="#bdscript-2">BDScript 2</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
 <p><strong>BDScript 2</strong> is the default in-app scripting language <em>(as of October 2021)</em>. It has been created with intention of enhancing its capabilities and fixing some of the problems previous versions had.</p>
-<p>The first edition of <strong>BDScript</strong> has one big issue, commands like <code>$sum[$sum[3;2];1]</code> didn't work. The reason it didn't work is because <strong>BDScript</strong> has a pre-defined order for executing functions.</p>
+<p>The first edition of <strong>BDScript</strong> has one big issue, commands like <code>$sum[$sum[3;2];1]</code> didn’t work. The reason it didn’t work is because <strong>BDScript</strong> has a pre-defined order for executing functions.</p>
 <p>In order to fix the issue, a new BDScript edition was developed called <strong>BDScript Unstable</strong>. It executes function in a command from bottom to top and from right to left.
-It fixes the issue, but the new edition has its quirks which could be problematic for some commands. That's where <strong>BDScript 2</strong> comes in. This edition executes commands from top to bottom and from left to right <em>(basically, just the way you read most of the books)</em>.<br />
+It fixes the issue, but the new edition has its quirks which could be problematic for some commands. That’s where <strong>BDScript 2</strong> comes in. This edition executes commands from top to bottom and from left to right <em>(basically, just the way you read most of the books)</em>.<br />
 Besides that, <strong>BDScript 2</strong> has additional features like <code>$eval[]</code>, <code>$try</code> and <code>$catch</code> and more.</p>
 <h2 id="features"><a class="header" href="#features">Features</a></h2>
 <h3 id="eval"><a class="header" href="#eval">$eval[]</a></h3>

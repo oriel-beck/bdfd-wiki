@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>About Modals - Bot Designer for Discord - Wiki</title>
+        <title>About Modals - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../../../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,10 +169,10 @@
                             <script src="../../../../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="modals"><a class="header" href="#modals">Modals</a></h1>
-<p>In this section, you'll learn how to use the modal message component.</p>
+<p>In this section, you’ll learn how to use the modal message component.</p>
 <p><img src="https://imgur.com/XUbUhdG.png" alt="" /></p>
 <blockquote>
-<p>⚠️ <strong>Warning:</strong> Modals are only supported for interaction responses  (like slash commands, buttons, select menus, etc), you can't open a modal from just a message command.</p>
+<p>⚠️ <strong>Warning:</strong> Modals are only supported for interaction responses  (like slash commands, buttons, select menus, etc), you can’t open a modal from just a message command.</p>
 </blockquote>
 <h2 id="creating-a-modal"><a class="header" href="#creating-a-modal">Creating a Modal</a></h2>
 <pre><code>$newModal[Modal ID;Title]
@@ -195,10 +196,10 @@
 <p><code>Label</code> - Name of the text input field. This value must be less than or equal to 45 characters.</p>
 </li>
 <li>
-<p><code>Minimum length</code> - Minimum number of characters a user needs to input. This value must be an integer between 0 and 4000, and can't be greater than the <code>Maximum length</code>.</p>
+<p><code>Minimum length</code> - Minimum number of characters a user needs to input. This value must be an integer between 0 and 4000, and can’t be greater than the <code>Maximum length</code>.</p>
 </li>
 <li>
-<p><code>Maximum length</code> - Maximum number of characters a user can input. This value must be an integer between 0 and 4000, and can't be less than the <code>Minimum length</code>.</p>
+<p><code>Maximum length</code> - Maximum number of characters a user can input. This value must be an integer between 0 and 4000, and can’t be less than the <code>Minimum length</code>.</p>
 </li>
 <li>
 <p><code>Required</code> - Whether a user must fill in the text input field, defaults to true.</p>
@@ -211,14 +212,14 @@
 </li>
 </ul>
 <blockquote>
-<p>🧙‍♂️ <strong>Note:</strong> You can't add more than 5 text input fields.</p>
+<p>🧙‍♂️ <strong>Note:</strong> You can’t add more than 5 text input fields.</p>
 </blockquote>
 <h2 id="getting-input-from-a-modal-submission"><a class="header" href="#getting-input-from-a-modal-submission">Getting Input from a Modal Submission</a></h2>
 <p><em>Use this function in response to the modal submission interaction:</em></p>
 <pre><code>$input[Text Input ID]
 </code></pre>
 <ul>
-<li><code>Text Input ID</code> - The text input field to get the user's input from.</li>
+<li><code>Text Input ID</code> - The text input field to get the user’s input from.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p>Command Trigger: <code>!modal</code> | Command Code:</p>
@@ -243,7 +244,7 @@ Pronouns : $input[modalInput2]
 About me : $input[modalInput3]
 </code></pre>
 <blockquote>
-<p>🤔 <strong>Explanation:</strong> The code above executes when the modal is submitted, because in the previous command we inputted the custom ID 'modal' into the <code>$newModal[]</code> function: <code>$newModal[modal;User Bio]</code>.</p>
+<p>🤔 <strong>Explanation:</strong> The code above executes when the modal is submitted, because in the previous command we inputted the custom ID ‘modal’ into the <code>$newModal[]</code> function: <code>$newModal[modal;User Bio]</code>.</p>
 </blockquote>
 <h3 id="result"><a class="header" href="#result">Result</a></h3>
 <p><img src="https://user-images.githubusercontent.com/69215413/168921581-24738366-8a3d-4de3-8398-34ea562501ce.png" alt="" /></p>

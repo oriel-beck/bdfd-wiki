@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$onLeave - Bot Designer for Discord - Wiki</title>
+        <title>$onLeave - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -169,7 +170,7 @@
                         </nav>
                         <h1 id="onleave"><a class="header" href="#onleave">$onLeave</a></h1>
 <p><em>Triggered when a user leaves the server.</em></p>
-<p><code>$onLeave[Channel ID]</code> is a callback, which means it's used in the command trigger <em>(not the code)</em>. The command is ran when a user leaves the server.</p>
+<p><code>$onLeave[Channel ID]</code> is a callback, which means it’s used in the command trigger <em>(not the code)</em>. The command is ran when a user leaves the server.</p>
 <blockquote>
 <p>📌 You can only have <strong>1</strong> single <code>$onLeave[]</code> per bot.</p>
 </blockquote>
@@ -185,7 +186,7 @@
 <li>
 <p>Create a command with the trigger <code>$onLeave[Channel ID]</code>.</p>
 <blockquote>
-<p>🧙‍♂️ You must replace "Channel ID" with a <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">valid channel ID</a> or a server variable that holds the channelID <a href="#advanced"><em>(See more here...)</em></a>!</p>
+<p>🧙‍♂️ You must replace “Channel ID” with a <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">valid channel ID</a> or a server variable that holds the channelID <a href="#advanced"><em>(See more here…)</em></a>!</p>
 </blockquote>
 <p><img src="https://user-images.githubusercontent.com/69215413/129492818-7aca8563-baff-4ebb-b82b-5a1a368339e5.png" alt="example1" /></p>
 </li>
@@ -202,7 +203,7 @@
     <discord-system-message type="leave">
         Goodbye <font color="white">User</font>.
     </discord-system-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot" role-color="#748BD4" verified bot>
+    <discord-message author="Wiki Bot" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" verified role-color="#748BD4" bot>
         <discord-mention>User</discord-mention> just left the server :c
     </discord-message>
 </discord-messages>
@@ -216,7 +217,7 @@
 <p>You must have at least version <code>1.17.9</code> of the app.</p>
 </li>
 <li>
-<p>Go to <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and select your bot. Then, click on bot's tab and enable Member Intents.<br />
+<p>Go to <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and select your bot. Then, click on bot’s tab and enable Member Intents.<br />
 <img src="https://user-images.githubusercontent.com/69215413/113423563-b83b3000-939c-11eb-8a71-8eaa53d20f2d.png" alt="image" /><br />
 <img src="https://user-images.githubusercontent.com/69215413/113423634-d6089500-939c-11eb-8d2c-083ac87ff66b.png" alt="image" /></p>
 </li>
@@ -227,18 +228,18 @@
 <blockquote>
 <p>📝 Enabled intents in the app should reflect the intents enabled in the Discord Developer Portal.<br />
 <strong>For example:</strong> If you have <code>members intent</code> enabled in the Discord Developer Portal then you should respectively
-enable them in the app <em>(unless you don't want to use them at all)</em>.</p>
+enable them in the app <em>(unless you don’t want to use them at all)</em>.</p>
 </blockquote>
 </li>
 <li>
-<p>Make sure <code>$onLeave[channelID]</code> is written in the "command trigger" field and not in the code.<br />
+<p>Make sure <code>$onLeave[channelID]</code> is written in the “command trigger” field and not in the code.<br />
 <img src="https://user-images.githubusercontent.com/69215413/113423759-09e3ba80-939d-11eb-95c2-1fe7860f3887.png" alt="image" /></p>
 </li>
 <li>
 <p>Make sure your bot has <code>VIEW_CHANNEL</code>, <code>EMBED_LINKS</code>, <code>SEND_MESSAGES</code> permission in the channel provided in <code>$onLeave[]</code>, and that you inputted a valid channel ID.</p>
 </li>
 <li>
-<p>Also, make sure you don't have more than 1 <code>$onLeave[]</code>.</p>
+<p>Also, make sure you don’t have more than 1 <code>$onLeave[]</code>.</p>
 </li>
 </ul>
 <h2 id="advanced"><a class="header" href="#advanced">Advanced</a></h2>
@@ -247,7 +248,7 @@ enable them in the app <em>(unless you don't want to use them at all)</em>.</p>
 If you own a public bot and want to make it so multiple different servers can use <code>$onLeave[]</code> <em>(e.g. set their own leave message channel)</em>, follow these steps:</p>
 <ol>
 <li>
-<p>Create a variable named "<code>leave</code>" and the value set to nothing.<br />
+<p>Create a variable named “<code>leave</code>” and the value set to nothing.<br />
 <img src="https://user-images.githubusercontent.com/69215413/129492681-5a50ca36-a76d-4add-a4d9-a64c29d0ed33.png" alt="image" /></p>
 </li>
 <li>
@@ -263,7 +264,7 @@ $setServerVar[leave;$mentionedChannels[1]]
 </blockquote>
 </li>
 <li>
-<p>Now replace <code>$onLeave[channelID]</code> in your leave command trigger, with <code>$onLeave[$getServerVar[leave]]</code> and you're all set!</p>
+<p>Now replace <code>$onLeave[channelID]</code> in your leave command trigger, with <code>$onLeave[$getServerVar[leave]]</code> and you’re all set!</p>
 </li>
 </ol>
 

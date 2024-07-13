@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Webhooks - Bot Designer for Discord - Wiki</title>
+        <title>Webhooks - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -172,17 +173,17 @@
 <h2 id="creating-a-webhook"><a class="header" href="#creating-a-webhook">Creating A Webhook</a></h2>
 <pre><code>$webhookCreate[channelID;username;avatarURL (can be left empty)]
 </code></pre>
-<p>Creates a webhook in the provided 'channelID', with the inputted 'username' and 'avatarURL' assets. This function returns the URL of the newly created webhook <strong>(webhook URLs should be kept private, treat them like a password)</strong>.</p>
+<p>Creates a webhook in the provided ‘channelID’, with the inputted ‘username’ and ‘avatarURL’ assets. This function returns the URL of the newly created webhook <strong>(webhook URLs should be kept private, treat them like a password)</strong>.</p>
 <blockquote>
 <p><strong>Note:</strong> Only ten webhooks can be created per channel.</p>
 </blockquote>
 <h2 id="editing-a-webhook"><a class="header" href="#editing-a-webhook">Editing A Webhook</a></h2>
 <pre><code>$webhookAvatarURL[webhookURL;avatarURL]
 </code></pre>
-<p>Changes the provided webhook's avatar.</p>
+<p>Changes the provided webhook’s avatar.</p>
 <pre><code>$webhookUsername[webhookURL;username]
 </code></pre>
-<p>Changes the provided webhook's username.</p>
+<p>Changes the provided webhook’s username.</p>
 <h2 id="webhook-messages"><a class="header" href="#webhook-messages">Webhook Messages</a></h2>
 <p>You can send messages via a webhook using the following functions:</p>
 <ul>

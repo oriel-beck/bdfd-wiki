@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>About Slash Commands - Bot Designer for Discord - Wiki</title>
+        <title>About Slash Commands - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../../../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -169,7 +170,7 @@
                         </nav>
                         <h1 id="slash-commands"><a class="header" href="#slash-commands">Slash Commands</a></h1>
 <p>In this guide, you will learn more about implementing slash commands to your bot.</p>
-<p>Slash commands are type of interactive application commands. It let's users to interact with your bot by typing <code>/&lt;command name&gt;</code>.</p>
+<p>Slash commands are type of interactive application commands. It let’s users to interact with your bot by typing <code>/&lt;command name&gt;</code>.</p>
 <p><img src="https://i.imgur.com/kLNyEby.jpg" alt="preview" /></p>
 <h1 id="general-information"><a class="header" href="#general-information">General information</a></h1>
 <ul>
@@ -183,9 +184,9 @@
 <p>Creating/modifying/deleting global slash commands might take up to <strong>1 hour</strong>.</p>
 </li>
 <li>
-<p>Creating a guild slash command is instant but it won't appear unless you have registered them in the current guild using <code>$registerGuildCommands[(slash command name;...)]</code> function.</p>
+<p>Creating a guild slash command is instant but it won’t appear unless you have registered them in the current guild using <code>$registerGuildCommands[(slash command name;...)]</code> function.</p>
 <blockquote>
-<p>📝 Guild slash commands don't appear in DMs unlike global slash commands.</p>
+<p>📝 Guild slash commands don’t appear in DMs unlike global slash commands.</p>
 </blockquote>
 </li>
 </ul>
@@ -208,8 +209,8 @@
 <ul>
 <li>Open BDFD app and select your bot.</li>
 <li>Press <code>Add invite bot to server</code> button in dashboard tab.</li>
-<li>Click <code>Edit invite link scopes</code> and enable <em>"Slash commands"</em> if its disabled.</li>
-<li>Now, go back &amp; press <em>"Add your bot to your server"</em></li>
+<li>Click <code>Edit invite link scopes</code> and enable <em>“Slash commands”</em> if its disabled.</li>
+<li>Now, go back &amp; press <em>“Add your bot to your server”</em></li>
 <li>Finally, invite the bot into your server.</li>
 </ul>
 </li>
@@ -217,8 +218,8 @@
 <h2 id="creating-a-slash-command"><a class="header" href="#creating-a-slash-command">Creating a slash command</a></h2>
 <ul>
 <li>Create or modify an existing command.</li>
-<li>Click <em>"Slash command trigger"</em>.</li>
-<li>Choose <em>"Enable global slash command"</em> or <em>"Enable guild slash command"</em> as per your preference.</li>
+<li>Click <em>“Slash command trigger”</em>.</li>
+<li>Choose <em>“Enable global slash command”</em> or <em>“Enable guild slash command”</em> as per your preference.</li>
 <li>Fill-up necessary data and save it.</li>
 </ul>
 <blockquote>
@@ -229,11 +230,11 @@
 <img src="https://user-images.githubusercontent.com/95774950/179396889-d9891b2a-74dd-4454-97b5-75eee1d12db0.png" alt="Screenshot_20220717_170915" />
 <img src="https://user-images.githubusercontent.com/95774950/179396894-e8b8e0c7-fe73-4f0b-8787-d40f8d3df630.png" alt="Screenshot_20220717_171511" /></p>
 <h2 id="slash-options"><a class="header" href="#slash-options">Slash options</a></h2>
-<p>Slash options are great way to get an user's input in slash commands.</p>
+<p>Slash options are great way to get an user’s input in slash commands.</p>
 <p>To create a slash option,</p>
 <ul>
 <li>Open your slash command edit trigger page.</li>
-<li>Click <em>"Add"</em> button in <code>Options</code> section.</li>
+<li>Click <em>“Add”</em> button in <code>Options</code> section.</li>
 <li>Fill-up necessary data and save the changes.</li>
 </ul>
 <blockquote>
@@ -265,16 +266,16 @@ then you can use <code>$message[&lt;arg number&gt;;&lt;option name&gt;]</code>.<
 <p>To create choices in options,</p>
 <ul>
 <li>In your slash command edit trigger page, create an option and fill-up the necessary data.</li>
-<li>Toggle <em>"Enabled"</em> in <code>Predefined choices</code> section.</li>
-<li>Then, click <em>"Add a new choice"</em> button.</li>
+<li>Toggle <em>“Enabled”</em> in <code>Predefined choices</code> section.</li>
+<li>Then, click <em>“Add a new choice”</em> button.</li>
 <li>Type your choice name and value.</li>
-<li>Click <em>"Add"</em> and save the changes.</li>
+<li>Click <em>“Add”</em> and save the changes.</li>
 </ul>
 <blockquote>
 <p>📝 A slash command can have upto maximum 25 choices per option.</p>
 </blockquote>
 <h3 id="retrieving-choices"><a class="header" href="#retrieving-choices">Retrieving choices</a></h3>
-<p>You can retrieve user's option choices using <code>$if</code> statements.</p>
+<p>You can retrieve user’s option choices using <code>$if</code> statements.</p>
 <h4 id="format"><a class="header" href="#format">Format</a></h4>
 <pre><code>$if[$message[&lt;option name&gt;]==&lt;choice #1 value&gt;]
       $c[Text/code here when user select 1st choice]

@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Variables - Bot Designer for Discord - Wiki</title>
+        <title>Variables - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -173,24 +174,24 @@
 Each variable has two elements, which we will breakdown in this section.</p>
 <h3 id="variable-elements"><a class="header" href="#variable-elements">Variable Elements</a></h3>
 <ul>
-<li><code>Name</code>: The name of the variable. This can't be modified by the bot, its used to "call" the current variable.</li>
+<li><code>Name</code>: The name of the variable. This can’t be modified by the bot, its used to “call” the current variable.</li>
 <li><code>Value</code>: The value of the variable. This can be modified by the bot, its returned when the variable name is called in <code>$getVar</code>/<code>$getUserVar</code>/<code>$getServerVar</code>/<code>$getChannelVar</code>.</li>
 </ul>
 <h3 id="creating-variables"><a class="header" href="#creating-variables">Creating Variables</a></h3>
 <blockquote>
 <p>📌 Creating variables can only be done in the app.</p>
 </blockquote>
-<p>Here's how to create a variable, which you can get and modify later:</p>
+<p>Here’s how to create a variable, which you can get and modify later:</p>
 <ol>
 <li>
 <p>Select the bot you want to add the new variable to.</p>
 </li>
 <li>
-<p>Go to "Variables" tab.</p>
+<p>Go to “Variables” tab.</p>
 <p><img src="https://i.ibb.co/ng3yJNn/Screenshot-20220717-132641.png" alt="ex2" /></p>
 </li>
 <li>
-<p>Then, click "+ New variable" button.</p>
+<p>Then, click “+ New variable” button.</p>
 <p><img src="https://i.ibb.co/Mc0nL0b/Screenshot-20220717-133047.png" alt="ex3" /></p>
 </li>
 <li>
@@ -203,13 +204,13 @@ Each variable has two elements, which we will breakdown in this section.</p>
 </li>
 </ol>
 <h3 id="editing-variables"><a class="header" href="#editing-variables">Editing Variables</a></h3>
-<p>Here's how you can modify an existing variable's name/default value:</p>
+<p>Here’s how you can modify an existing variable’s name/default value:</p>
 <ol>
 <li>
 <p>Select the bot you want to edit the variable for.</p>
 </li>
 <li>
-<p>Go to "Variables" tab.</p>
+<p>Go to “Variables” tab.</p>
 <p><img src="https://i.ibb.co/ng3yJNn/Screenshot-20220717-132641.png" alt="ex2" /></p>
 </li>
 <li>
@@ -226,13 +227,13 @@ Each variable has two elements, which we will breakdown in this section.</p>
 </li>
 </ol>
 <h3 id="deleting-variables"><a class="header" href="#deleting-variables">Deleting Variables</a></h3>
-<p>Here's how you can delete variables:</p>
+<p>Here’s how you can delete variables:</p>
 <ol>
 <li>
 <p>Select the bot you want to delete the variable for.</p>
 </li>
 <li>
-<p>Go to "Variables" tab.</p>
+<p>Go to “Variables” tab.</p>
 <p><img src="https://i.ibb.co/ng3yJNn/Screenshot-20220717-132641.png" alt="ex2" /></p>
 </li>
 <li>
@@ -248,7 +249,7 @@ Each variable has two elements, which we will breakdown in this section.</p>
 <p>📌 Deleting variables might return error message in those commands which were using the deleted variables.</p>
 </blockquote>
 <h2 id="globalglobal-user-variables"><a class="header" href="#globalglobal-user-variables">Global/Global-User Variables</a></h2>
-<p><a href="../../bdscript/setVar.html"><code>$setVar</code></a>/<a href="../../bdscript/getVar.html"><code>$getVar</code></a> are global variable functions, which means they apply universally <em>(i.e they don't change per-server, per-channel, or per-user)</em>.<br />
+<p><a href="../../bdscript/setVar.html"><code>$setVar</code></a>/<a href="../../bdscript/getVar.html"><code>$getVar</code></a> are global variable functions, which means they apply universally <em>(i.e they don’t change per-server, per-channel, or per-user)</em>.<br />
 However, if you provide a user ID in the optional <code>User ID</code> parameter then it becomes a global-user variable.</p>
 <p>Global-user variables value stay same with the user in every server. The usage of global-user variables looks like this:</p>
 <ul>
@@ -257,16 +258,16 @@ However, if you provide a user ID in the optional <code>User ID</code> parameter
 </ul>
 <h3 id="global-variables---functions"><a class="header" href="#global-variables---functions">Global Variables - Functions</a></h3>
 <ul>
-<li><code>$setVar[Variable Name;New Value]</code>: Changes the provided global-variable's value to 'New Value'.</li>
+<li><code>$setVar[Variable Name;New Value]</code>: Changes the provided global-variable’s value to ‘New Value’.</li>
 <li><code>$getVar[Variable Name]</code>: Gets the current value of the provided global-variable.</li>
 </ul>
 <blockquote>
 <p>📌 Global variables are universal, meaning if the variable gets modified, the modification applies to everyone.</p>
 </blockquote>
 <h3 id="global-variables---example"><a class="header" href="#global-variables---example">Global Variables - Example</a></h3>
-<p>This is the variable we're working with:</p>
+<p>This is the variable we’re working with:</p>
 <p><img src="https://user-images.githubusercontent.com/69215413/126381882-091abee6-7a3a-4129-a7bf-1f008c1e57c0.png" alt="ex" /></p>
-<p>This command adds <code>1</code> cool point to the 'CoolCount' variable value, everytime it is ran.</p>
+<p>This command adds <code>1</code> cool point to the ‘CoolCount’ variable value, everytime it is ran.</p>
 <pre><code>$nomention
 $setVar[CoolCount;$sum[$getVar[CoolCount];1]]
 Cool counter updated! 😎
@@ -281,16 +282,16 @@ $c[This is the same for everyone, no matter who runs it.]
 <p><img src="https://user-images.githubusercontent.com/69215413/126382138-d99ca7e2-0538-48fb-9469-9fd4a3fb094e.png" alt="ex" /></p>
 <h3 id="global-user-variables---functions"><a class="header" href="#global-user-variables---functions">Global-User Variables - Functions</a></h3>
 <ul>
-<li><code>$setVar[Variable Name;New Value;User ID]</code>: Sets the provided variable to 'New Value' for the provided 'User ID'.</li>
-<li><code>$getVar[Variable Name;User ID]</code>: Gets the provided variable's value for the given 'User ID'.</li>
+<li><code>$setVar[Variable Name;New Value;User ID]</code>: Sets the provided variable to ‘New Value’ for the provided ‘User ID’.</li>
+<li><code>$getVar[Variable Name;User ID]</code>: Gets the provided variable’s value for the given ‘User ID’.</li>
 </ul>
 <blockquote>
 <p>📌 Global-user variables stay with the user in every server. Unlike user variables which are unique per-user and differ in each server.</p>
 </blockquote>
 <h3 id="global-user-variables---examples"><a class="header" href="#global-user-variables---examples">Global-User Variables - Examples</a></h3>
-<p>This is the variable we're working with:</p>
+<p>This is the variable we’re working with:</p>
 <p><img src="https://user-images.githubusercontent.com/69215413/126384691-b289938f-e53d-4e88-91ab-a7fae7e6fae0.png" alt="ex" /></p>
-<p>This command modifies the user's bio.</p>
+<p>This command modifies the user’s bio.</p>
 <pre><code>$nomention
 $argsCheck[&gt;1;❌ Please provide text!]
 $setVar[Bio;$noMentionMessage;$authorID]
@@ -298,7 +299,7 @@ Successfully updated your bio!
 $c[Updates the variable for the user in all servers.]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/69215413/126384863-66d14e77-ef14-4a3a-aa6f-c8601342c465.png" alt="ex" /></p>
-<p>This command returns the user's current bio.</p>
+<p>This command returns the user’s current bio.</p>
 <pre><code>$nomention
 **&lt;@$mentioned[1;yes]&gt;'s Bio:**
 $getVar[Bio;$mentioned[1;yes]]
@@ -309,14 +310,14 @@ $c[Gets the author/mentioned-user's current bio.]
 <p>User variables are unique per-user and differ in each server.</p>
 <h3 id="user-variables---functions"><a class="header" href="#user-variables---functions">User Variables - Functions</a></h3>
 <ul>
-<li><code>$setUserVar[Variable Name;New Value;(User ID;Guild ID)]</code>: Sets the provided variable to 'New Value' for the given 'User ID' and 'Guild ID', or the author of the command if no 'User ID' is provided and current guild if no 'Guild ID' is provided.</li>
-<li><code>$getUserVar[Variable Name;(User ID;Guild ID)]</code>: Gets the current value for the provided user variable. Returns the author's variable value if no 'User ID' is provided and uses the current guild if no 'Guild ID' is provided.</li>
+<li><code>$setUserVar[Variable Name;New Value;(User ID;Guild ID)]</code>: Sets the provided variable to ‘New Value’ for the given ‘User ID’ and ‘Guild ID’, or the author of the command if no ‘User ID’ is provided and current guild if no ‘Guild ID’ is provided.</li>
+<li><code>$getUserVar[Variable Name;(User ID;Guild ID)]</code>: Gets the current value for the provided user variable. Returns the author’s variable value if no ‘User ID’ is provided and uses the current guild if no ‘Guild ID’ is provided.</li>
 </ul>
 <h3 id="user-variables---examples"><a class="header" href="#user-variables---examples">User Variables - Examples</a></h3>
 <p>⚠️ <strong>This example would require premium to be fully functional!</strong> ⚠️</p>
-<p>Here's the variable we're working with:</p>
+<p>Here’s the variable we’re working with:</p>
 <p><img src="https://user-images.githubusercontent.com/69215413/126389484-d74eccfa-9dc1-43ef-a538-4c07e841e102.png" alt="example" /></p>
-<p>This command adds <code>1</code> to the user's 'Mentions' variable, everytime the user mentions someone.</p>
+<p>This command adds <code>1</code> to the user’s ‘Mentions’ variable, everytime the user mentions someone.</p>
 <blockquote>
 <p>📌 The trigger for this command would be <code>$messageContains[&lt;@]</code>.</p>
 </blockquote>
@@ -332,13 +333,13 @@ You have mentioned others `$getUserVar[Mentions]` times in $serverName[$guildID]
 <p>Server variables are unique per-server.</p>
 <h3 id="server-variables---functions"><a class="header" href="#server-variables---functions">Server Variables - Functions</a></h3>
 <ul>
-<li><code>$setServerVar[Variable Name;New Value;(Server ID)]</code>: Sets the provided variable to 'New Value' for the given 'Server ID', or the server that the command was ran in; if no 'Server ID' was provided.</li>
-<li><code>$getServerVar[Variable Name;(Server ID)]</code>: Gets the current value for the provided server variable. Returns the current server's variable value if no 'Server ID' is provided.</li>
+<li><code>$setServerVar[Variable Name;New Value;(Server ID)]</code>: Sets the provided variable to ‘New Value’ for the given ‘Server ID’, or the server that the command was ran in; if no ‘Server ID’ was provided.</li>
+<li><code>$getServerVar[Variable Name;(Server ID)]</code>: Gets the current value for the provided server variable. Returns the current server’s variable value if no ‘Server ID’ is provided.</li>
 </ul>
 <h3 id="server-variables---examples"><a class="header" href="#server-variables---examples">Server Variables - Examples</a></h3>
-<p>Here's the variable we're working with:</p>
+<p>Here’s the variable we’re working with:</p>
 <p><img src="https://user-images.githubusercontent.com/69215413/126411663-f93bf15d-57d5-4f36-8a6d-fda6a556aebd.png" alt="ex" /></p>
-<p>This command adds <code>1</code> cookie to the 'ServerCookies' variable value, everytime it is ran.</p>
+<p>This command adds <code>1</code> cookie to the ‘ServerCookies’ variable value, everytime it is ran.</p>
 <pre><code>$nomention
 This server now has `$sum[$getServerVar[ServerCookies];1]` cookies picked 🍪
 $setServerVar[ServerCookies;$sum[$getServerVar[ServerCookies];1]]
@@ -351,15 +352,15 @@ Total Server Cookies: 🍪 $getServerVar[ServerCookies]
 <p><img src="https://user-images.githubusercontent.com/69215413/126411873-6f2ddfb2-d1b1-4000-a7c0-7c8a25ca3bf0.png" alt="ex" /></p>
 <h3 id="channel-variables---functions"><a class="header" href="#channel-variables---functions">Channel Variables - Functions</a></h3>
 <ul>
-<li><code>$setChannelVar[Variable Name;New Value;(Channel ID)]</code>: Sets the provided variable to 'New Value' for the provided 'Channel ID', or the channel that the command was ran in; if no 'Channel ID' was provided.</li>
-<li><code>$getChannelVar[Variable Name;(Channel ID)]</code>: Gets the current value for the provided channel variable. Returns the current channel's variable value if no 'Channel ID' is provided.</li>
+<li><code>$setChannelVar[Variable Name;New Value;(Channel ID)]</code>: Sets the provided variable to ‘New Value’ for the provided ‘Channel ID’, or the channel that the command was ran in; if no ‘Channel ID’ was provided.</li>
+<li><code>$getChannelVar[Variable Name;(Channel ID)]</code>: Gets the current value for the provided channel variable. Returns the current channel’s variable value if no ‘Channel ID’ is provided.</li>
 </ul>
 <h3 id="channel-variables---examples"><a class="header" href="#channel-variables---examples">Channel Variables - Examples</a></h3>
-<p>Here's the variable we're working with:</p>
+<p>Here’s the variable we’re working with:</p>
 <p><img src="https://user-images.githubusercontent.com/113303649/202899818-b265e793-9a56-4a41-9539-9af01b622de8.png" alt="ex" /></p>
-<p>This command adds <code>1</code> uses to the 'Uses' variable value, everytime it is ran.</p>
+<p>This command adds <code>1</code> uses to the ‘Uses’ variable value, everytime it is ran.</p>
 <blockquote>
-<p>📌 The trigger for this command will be your bot's prefix, example: <code>!</code>.</p>
+<p>📌 The trigger for this command will be your bot’s prefix, example: <code>!</code>.</p>
 </blockquote>
 <pre><code>$nomention
 This channel has now `$sum[$getChannelVar[Uses];1]` uses of the command.
@@ -379,10 +380,10 @@ Command used `$getChannelVar[Uses]` times in this channel
 </ul>
 <h3 id="local-economy"><a class="header" href="#local-economy">Local Economy</a></h3>
 <ul>
-<li>Replace "Money" with your cash/money variable, if "Money" is the name of your money variable then you can just leave it as is!</li>
-<li>Replace "Amount" with the amount of money you want to add/remove to/from the user. Like this: <code>100</code>, <code>$random[1;11]</code>, <code>$random[100;1001]</code>, <code>10000</code>.</li>
+<li>Replace “Money” with your cash/money variable, if “Money” is the name of your money variable then you can just leave it as is!</li>
+<li>Replace “Amount” with the amount of money you want to add/remove to/from the user. Like this: <code>100</code>, <code>$random[1;11]</code>, <code>$random[100;1001]</code>, <code>10000</code>.</li>
 </ul>
-<p>Gets the user's current balance. If a user mention is provided, then the bot will return that user's balance:</p>
+<p>Gets the user’s current balance. If a user mention is provided, then the bot will return that user’s balance:</p>
 <pre><code>$getUserVar[Money;$mentioned[1;yes]]
 </code></pre>
 <p>Adds money to the mentioned user:</p>
@@ -402,10 +403,10 @@ Command used `$getChannelVar[Uses]` times in this channel
 </code></pre>
 <h3 id="global-economy"><a class="header" href="#global-economy">Global Economy</a></h3>
 <ul>
-<li>Replace "Money" with your cash/money variable, if "Money" is the name of your money variable then you can just leave it as is!</li>
-<li>Replace "Amount" with the amount of money you want to add/remove to/from the user. Like this: <code>100</code>, <code>$random[1;11]</code>, <code>$random[100;1001]</code>, <code>10000</code>.</li>
+<li>Replace “Money” with your cash/money variable, if “Money” is the name of your money variable then you can just leave it as is!</li>
+<li>Replace “Amount” with the amount of money you want to add/remove to/from the user. Like this: <code>100</code>, <code>$random[1;11]</code>, <code>$random[100;1001]</code>, <code>10000</code>.</li>
 </ul>
-<p>Gets the user's current balance/amount of money. If a user mention is provided then the bot will return that user's balance:</p>
+<p>Gets the user’s current balance/amount of money. If a user mention is provided then the bot will return that user’s balance:</p>
 <pre><code>$getVar[Money;$mentioned[1;yes]]
 </code></pre>
 <p>Adds money to the mentioned user:</p>

@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$addField - Bot Designer for Discord - Wiki</title>
+        <title>$addField - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -193,10 +194,10 @@ $addField[The field name 2!;The field value 2!]
 $addField[The field name 3!;The field value 3!]
 </code></pre>
 <discord-messages>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" role-color="#EE7908" author="Nicky">
+    <discord-message avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" bot role-color="#748BD4" verified author="Wiki Bot">
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4" avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
@@ -223,17 +224,17 @@ $addField[The field name 3!;The field value 3!;yes]
     <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png">
         !example
     </discord-message>
-    <discord-message avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message verified bot avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot" role-color="#748BD4">
         <none>
         <discord-embed slot="embeds">
             <discord-embed-fields slot="fields">
-                <discord-embed-field inline-index="1" field-title="The field name 1!" inline>
+                <discord-embed-field inline field-title="The field name 1!" inline-index="1">
                     The field value 1!
                 </discord-embed-field>
                 <discord-embed-field inline-index="2" field-title="The field name 2!" inline>
                     The field value 2!
                 </discord-embed-field>
-                <discord-embed-field field-title="The field name 3!" inline inline-index="3">
+                <discord-embed-field field-title="The field name 3!" inline-index="3" inline>
                     The field value 3!
                 </discord-embed-field>
             </discord-embed-fields>

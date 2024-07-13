@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$changeUsername - Bot Designer for Discord - Wiki</title>
+        <title>$changeUsername - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,13 +169,13 @@
                             <script src="../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="changeusername"><a class="header" href="#changeusername">$changeUsername</a></h1>
-<p>Changes the mentioned user's nickname.</p>
+<p>Changes the mentioned user’s nickname.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$changeUsername[New nickname]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>New nickname</code> <code>(Type: String || Flag: Required)</code>: The text to change the user's nickname to. It cannot exceed more than 32 characters. Using <code>%username%</code> will be replaced by the real user's username.</li>
+<li><code>New nickname</code> <code>(Type: String || Flag: Required)</code>: The text to change the user’s nickname to. It cannot exceed more than 32 characters. Using <code>%username%</code> will be replaced by the real user’s username.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
@@ -184,10 +185,10 @@ $changeUsername[$noMentionMessage]
 Changed &lt;@$mentioned[1]&gt;'s nickname to **$noMentionMessage**.
 </code></pre>
 <discord-messages>
-    <discord-message author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png" role-color="#EE7908">
+    <discord-message role-color="#EE7908" author="Nicky" avatar="https://cdn.discordapp.com/avatars/729343563401265193/9548704ff367c6e64b8cf54552e21154.png">
         !nickname <discord-mention>Cool Bot</discord-mention> Cool Bot
     </discord-message>
-    <discord-message author="Wiki Bot" bot role-color="#748BD4" verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png">
+    <discord-message role-color="#748BD4" bot verified avatar="https://cdn.discordapp.com/avatars/566613317972394004/a6e3c8ebb561b7083d60d12a04210baf.png" author="Wiki Bot">
         Changed <discord-mention>Cool Bot</discord-mention>'s nickname to <b>Cool Bot</b>.
     </discord-message>
 </discord-messages>

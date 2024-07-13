@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$newTicket - Bot Designer for Discord - Wiki</title>
+        <title>$newTicket - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -182,7 +183,7 @@
 </blockquote>
 </li>
 <li>
-<p><code>No question message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that appears in <code>{subject}</code> when the user doesn't provide a subject.</p>
+<p><code>No question message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that appears in <code>{subject}</code> when the user doesn’t provide a subject.</p>
 </li>
 <li>
 <p><code>In ticket message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that is sent in the new ticket channel.</p>
@@ -191,7 +192,7 @@
 <p><code>Message to user</code> <code>(Type: String || Flag: Emptiable)</code>: The message that gets sent in the current channel.</p>
 </li>
 <li>
-<p><code>Error message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that gets returned when the ticket can't be created.</p>
+<p><code>Error message</code> <code>(Type: String || Flag: Emptiable)</code>: The message that gets returned when the ticket can’t be created.</p>
 </li>
 <li>
 <p><code>Ticket number</code> <code>(Type: Integer || Flag: Optional)</code>: For custom ticket number.</p>
@@ -203,7 +204,7 @@
 <h3 id="subset-functions"><a class="header" href="#subset-functions">Subset Functions</a></h3>
 <p>You can use these subset functions in <code>$newTicket</code> :</p>
 <ul>
-<li><code>{subject}</code> - Returns the ticket subject (user's message).</li>
+<li><code>{subject}</code> - Returns the ticket subject (user’s message).</li>
 <li><code>{channel}</code> - Mentions the new ticket channel.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>

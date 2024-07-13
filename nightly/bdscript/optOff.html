@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>$optOff - Bot Designer for Discord - Wiki</title>
+        <title>$optOff - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href=".././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -171,7 +172,7 @@
 <p>Can only be used in <strong>BDScript 2</strong>. Executes functions with turned off optimizations.</p>
 <blockquote>
 <p>As stated in the function description, <code>$optOff</code> disables the optimization of the functions in its arguments.<br />
-This means that functions such as <code>$random</code>, <code>$randomText</code> and others won't return the previous response, but instead a new response will be returned.</p>
+This means that functions such as <code>$random</code>, <code>$randomText</code> and others won’t return the previous response, but instead a new response will be returned.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$optOff[Functions to be executed]
@@ -181,13 +182,13 @@ This means that functions such as <code>$random</code>, <code>$randomText</code>
 <li><code>Functions to be executed</code> <code>(Type: String || Flag: Emptiable)</code>: The functions to execute with turned off optimizations.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
-<p>Let's try to run this simple code without <code>$optOff</code>:</p>
+<p>Let’s try to run this simple code without <code>$optOff</code>:</p>
 <pre><code>The 1st random: $random[1;101]
 The 2nd random: $random[1;101]
 The 3rd random: $random[1;101]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/70456337/206849839-8c9fc256-f16f-41f2-aaab-a3e8b65dbebb.png" alt="Example" /></p>
-<p>As we can see, all three randoms returned the same number. Let's fix this by adding <code>$optOff</code>:</p>
+<p>As we can see, all three randoms returned the same number. Let’s fix this by adding <code>$optOff</code>:</p>
 <pre><code>$optOff[
 The 1st random: $random[1;101]
 The 2nd random: $random[1;101]
@@ -195,14 +196,14 @@ The 3rd random: $random[1;101]
 ]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/70456337/206849845-79dd7f5c-382f-43c6-a9b0-8918af260715.png" alt="Example" /></p>
-<p>But what if we want to make only the 1st random different from others? In that case we shouldn't put all this code into <code>$optOff</code>, but only put a particular random into it - the 2nd one:</p>
+<p>But what if we want to make only the 1st random different from others? In that case we shouldn’t put all this code into <code>$optOff</code>, but only put a particular random into it - the 2nd one:</p>
 <pre><code>The 1st random: $random[1;101]
 The 2nd random: $optOff[$random[1;101]]
 The 3rd random: $random[1;101]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/70456337/206849854-7d5c9f16-24fc-4889-b9bf-9a3cda810699.png" alt="Example" /></p>
 <blockquote>
-<p>As you can see, the 3rd random will inherit the response of the 2nd one, since it's not included in <code>$optOff</code>.</p>
+<p>As you can see, the 3rd random will inherit the response of the 2nd one, since it’s not included in <code>$optOff</code>.</p>
 </blockquote>
 
                     </main>

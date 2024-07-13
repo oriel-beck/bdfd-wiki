@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Gateway Intents - Bot Designer for Discord - Wiki</title>
+        <title>Gateway Intents - Bot Designer For Discord - Wiki</title>
 
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A wiki page which explains BDFD functions, callbacks, features &amp; much more.">
+        <meta name="description" content="The official documentation of BDFD. It covers guides, examples related to BDScript, BDJS and as well features too.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#748bd4">
         <meta name="og:image" content="https://botdesignerdiscord.com/logo512.png">
@@ -36,6 +36,7 @@
         <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+           <link rel="stylesheet" href="../.././src/theme/mdbook-admonish.css">
 
     </head>
   
@@ -122,7 +123,7 @@
                             </button>
                         </div>
 
-                        <h1 class="menu-title">Bot Designer for Discord - Wiki</h1>
+                        <h1 class="menu-title">Bot Designer For Discord - Wiki</h1>
 
                         <div class="right-buttons">
 
@@ -168,7 +169,7 @@
                             <script src="../../theme/breadcrumbs.js"></script>
                         </nav>
                         <h1 id="gateway-intents"><a class="header" href="#gateway-intents">Gateway Intents</a></h1>
-<p>In this guide, you will learn about Discord's Gateway Intents and how to enable them in BDFD.</p>
+<p>In this guide, you will learn about Discord’s Gateway Intents and how to enable them in BDFD.</p>
 <h2 id="what-are-gateway-intents"><a class="header" href="#what-are-gateway-intents">What are Gateway Intents?</a></h2>
 <p>When a bot is connected to the <a href="https://discord.com/developers/docs/topics/gateway">Discord Gateway</a>, it receives events on actions happening on Discord.
 Bots can receive a large amount of events from Discord, so in order to decrease the amount of events each bot receives, Discord requires bots to send Gateway Intents when connecting to the Gateway.<br />
@@ -214,12 +215,12 @@ This intent is primarily required to fetch the entire list of guild members, and
 <li><a href="../../callbacks/onLeave.html"><code>$onLeave[]</code></a></li>
 </ul>
 <h4 id="message-content-intent"><a class="header" href="#message-content-intent">Message Content Intent</a></h4>
-<p>Unlike the two intents above, Message Content Intent doesn't allow for any new events.
+<p>Unlike the two intents above, Message Content Intent doesn’t allow for any new events.
 Instead, it allows the bot to receive message content data, which includes <code>content</code>, <code>attachments</code>, <code>embeds</code>, and <code>components</code>.</p>
 <p>If your bot is based on prefix-based commands, then this intent is required.
 Otherwise, you will need to use <a href="../general/interactions/slashCommands/aboutSlashCommands.html">slash commands</a> instead.</p>
 <blockquote>
-<p>📌 Without this intent, your bot can only read message content data in DMs, messages where your bot was mentioned, and it's own messages.</p>
+<p>📌 Without this intent, your bot can only read message content data in DMs, messages where your bot was mentioned, and it’s own messages.</p>
 </blockquote>
 <p>The following functions/callbacks require this intent:</p>
 <ul>
@@ -244,22 +245,22 @@ Otherwise, you will need to use <a href="../general/interactions/slashCommands/a
 <p>Open your bot dashboard in the BDFD app (Make sure your app version is <code>2.2.2</code> or above).</p>
 </li>
 <li>
-<p>Click on the "Settings" tab, and then on "Go to gateway intents settings".</p>
+<p>Click on the “Settings” tab, and then on “Go to gateway intents settings”.</p>
 </li>
 <li>
-<p>After that, click on "Change gateway intents on Developer Portal".</p>
+<p>After that, click on “Change gateway intents on Developer Portal”.</p>
 </li>
 <li>
 <p>Select your required intents and save the changes.</p>
 <blockquote>
-<p>📌 The intents you have enabled in the Developer portal should be reflected in the BDFD app. If they aren't, click on "Sync intents with Developer Portal settings".</p>
+<p>📌 The intents you have enabled in the Developer portal should be reflected in the BDFD app. If they aren’t, click on “Sync intents with Developer Portal settings”.</p>
 </blockquote>
 </li>
 </ol>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p><img src="https://user-images.githubusercontent.com/70456337/199396053-706bc3a5-fc19-4f03-b40f-9cf13755750c.gif" alt="Instruction" /></p>
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>We will not be discussing about Standard Intents here, since it isn't required and is auto-handled by BDFD internally. If you still want to learn more about it, feel free to check <a href="https://discord.com/developers/docs/topics/gateway#gateway-intents">Discord Docs</a>.</p>
+<p>We will not be discussing about Standard Intents here, since it isn’t required and is auto-handled by BDFD internally. If you still want to learn more about it, feel free to check <a href="https://discord.com/developers/docs/topics/gateway#gateway-intents">Discord Docs</a>.</p>
 </div>
 
                     </main>
