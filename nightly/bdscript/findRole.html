@@ -171,7 +171,7 @@
                         <h1 id="findrole"><a class="header" href="#findrole">$findRole</a></h1>
 <p>Finds a role’s ID using the given role name, ID, or mention.</p>
 <blockquote>
-<p>📝 This function can only find roles of the current server.</p>
+<p>This function can only find roles of <strong>the current</strong> server.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$findRole[Role]
@@ -182,9 +182,19 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$findRole[$message]
+Role ID: $findRole[$message]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125977360-1deeba9f-9350-4bbc-a69d-e56352a8d9aa.png" alt="example" /></p>
+<discord-messages>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22" author="RainbowKey">
+        !example Support
+    </discord-message>
+    <discord-message author="BDFD Support" verified bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" role-color="#378afa">
+        Role ID: 568155071997542410
+    </discord-message>
+</discord-messages>
+<blockquote>
+<p><a href="./message.html">How <code>$message</code> works?</a></p>
+</blockquote>
 
                     </main>
 

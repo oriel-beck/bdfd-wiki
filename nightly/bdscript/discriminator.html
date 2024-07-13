@@ -173,24 +173,29 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$discriminator[User ID]
 </code></pre>
+<blockquote>
+<p>Discord has updated the username system, removing discriminators for users. Discriminators will only work for bots. For user it will return <code>0000</code>.</p>
+</blockquote>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
 <li><code>User ID</code> <code>(Type: Snowflake || Flag: Emptiable)</code>: The user to get the discriminator from.</li>
 </ul>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code>$nomention
+Discriminator: $discriminator[$mentioned[1]]
+</code></pre>
+<discord-messages>
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png">
+        !example <discord-mention>BDFD Support</discord-mention>
+    </discord-message>
+    <discord-message bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" author="BDFD Support" role-color="#378afa" verified>
+        Discriminator: #7678
+    </discord-message>
+</discord-messages>
 <blockquote>
-<p>🧙‍♂️ You can leave the <code>User ID</code> argument empty to get the discriminator of the author of the message. See <a href="#example-1">Example 1</a> below.</p>
+<p>You can use <code>$discriminator[]</code> get the discriminator of the author.<br />
+<a href="./mentioned.html">How <code>$mentioned[]</code> works?</a>)</p>
 </blockquote>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<h3 id="example-1"><a class="header" href="#example-1">Example #1</a></h3>
-<pre><code>$nomention
-Hello $username#$discriminator[]!
-</code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/123010488-b5911b00-d38c-11eb-8aeb-a7453c3687c6.png" alt="example1" /></p>
-<h3 id="example-2"><a class="header" href="#example-2">Example #2</a></h3>
-<pre><code>$nomention
-Hello, I'm **$username[$botID]#$discriminator[$botID]**!
-</code></pre>
-<p><img src="https://user-images.githubusercontent.com/111157596/232813565-f300e328-35db-4c5b-b98d-839e5db4f428.png" alt="example2" /></p>
 
                     </main>
 

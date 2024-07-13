@@ -171,7 +171,7 @@
                         <h1 id="isboolean"><a class="header" href="#isboolean">$isBoolean</a></h1>
 <p>Returns whether the provided text is a boolean or not.</p>
 <blockquote>
-<p>🧙‍♂️ “true” means the text is a boolean, “false” means it isn’t.</p>
+<p>“true” means the text is a boolean, “false” means it isn’t.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$isBoolean[Text]
@@ -190,9 +190,28 @@
 </div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$isBoolean[$message]
+Is boolean?: `$isBoolean[$message]`
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126853488-21cc74f2-358b-4c07-97af-9c7e3346101c.png" alt="example" /></p>
+<discord-messages>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22" author="RainbowKey">
+        !example yes
+    </discord-message>
+    <discord-message author="BDFD Support" verified role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" bot>
+        Is boolean?: <code>true</code>
+    </discord-message>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" author="RainbowKey" role-color="#E67E22">
+        !example false
+    </discord-message>
+    <discord-message author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" bot role-color="#378afa" verified>
+        Is boolean?: <code>true</code>
+    </discord-message>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" author="RainbowKey" role-color="#E67E22">
+        !example text
+    </discord-message>
+    <discord-message avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" role-color="#378afa" bot author="BDFD Support" verified>
+        Is boolean?: <code>false</code>
+    </discord-message>
+</discord-messages>
 
                     </main>
 

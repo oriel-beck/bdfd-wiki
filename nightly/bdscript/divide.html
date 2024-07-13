@@ -171,18 +171,24 @@
                         <h1 id="divide"><a class="header" href="#divide">$divide</a></h1>
 <p>Divides the provided numbers.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
-<pre><code>$divide[numbers]
+<pre><code>$divide[Numbers]
 </code></pre>
 <h3 id="parameters"><a class="header" href="#parameters">Parameters</a></h3>
 <ul>
-<li><code>numbers</code> <code>(Type: Integer, Float || Flag: Required)</code>: The numbers to divide. Separate numbers using <code>;</code>.</li>
+<li><code>Numbers</code> <code>(Type: Integer, Float || Flag: Required)</code>: The numbers to divide. Separate numbers using <code>;</code>.</li>
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$argsCheck[&gt;2;❌ Please provide the needed arguments! Usage: `!divide (number1) (number2)`]
-Answer: $divide[$message[1];$message[2]]
+Answer: $divide[10;$message]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/125975569-bfda8ef1-40f8-4e47-b3d7-340e3b4c1048.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" role-color="#E67E22" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png">
+        !example 5
+    </discord-message>
+    <discord-message role-color="#378afa" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" bot verified author="BDFD Support">
+        Answer: 2
+    </discord-message>
+</discord-messages>
 
                     </main>
 

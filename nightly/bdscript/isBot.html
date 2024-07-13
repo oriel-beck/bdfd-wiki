@@ -171,7 +171,7 @@
                         <h1 id="isbot"><a class="header" href="#isbot">$isBot</a></h1>
 <p>Returns whether the provided user is a bot or not.</p>
 <blockquote>
-<p>🧙‍♂️ “true” means the user is a bot, “false” means they aren’t.</p>
+<p>“true” means the user is a bot, “false” means they aren’t.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$isBot[User ID]
@@ -182,9 +182,22 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-Bot? $isBot[$findUser[$message]]
+Bot?: $isBot[$mentioned[1]]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/69215413/126853528-3af140c4-0c73-4091-bb6f-d1f6e3567bf5.png" alt="image" /></p>
+<discord-messages>
+    <discord-message author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png" role-color="#E67E22">
+        !example <discord-mention>MineBarekSA</discord-mention>
+    </discord-message>
+    <discord-message verified role-color="#378afa" bot avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png" author="BDFD Support">
+        Bot?: <code>false</code>
+    </discord-message>
+    <discord-message role-color="#E67E22" author="RainbowKey" avatar="https://cdn.discordapp.com/avatars/803569638084313098/5f966aee57d5eed7d379e104602c088f.png">
+        !example <discord-mention>BDFD Support</discord-mention>
+    </discord-message>
+    <discord-message bot role-color="#378afa" verified author="BDFD Support" avatar="https://cdn.discordapp.com/avatars/1009018156494368798/fdc04b373e5fe0005526c9c928c02514.png">
+        Bot?: <code>true</code>
+    </discord-message>
+</discord-messages>
 
                     </main>
 
