@@ -25,5 +25,5 @@ Current Year: $year
   color: "#748BD4"
   bot: true
   content: |
-    Current Year: 2023
+    Current Year: 2024
 ```

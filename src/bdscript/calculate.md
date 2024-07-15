@@ -31,7 +31,8 @@ $calculate[$message] 🧠
   color: "#E67E22"
   content: |
     !example 10+5.9-9
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

@@ -1,7 +1,7 @@
 # $isBoolean
 Returns whether the provided text is a boolean or not.
 
-> 🧙‍♂️ "true" means the text is a boolean, "false" means it isn't.
+> "true" means the text is a boolean, "false" means it isn't.
 
 ## Syntax
 ```
@@ -22,7 +22,44 @@ enable | disable
 ## Example
 ```
 $nomention
-$isBoolean[$message]
+Is boolean?: `$isBoolean[$message]`
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/126853488-21cc74f2-358b-4c07-97af-9c7e3346101c.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example yes
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is boolean?: <code>true</code>
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example false
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is boolean?: <code>true</code>
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example text
+- user_id: 1009018156494368798
+  username: BDFD Support
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Is boolean?: <code>false</code>
+```

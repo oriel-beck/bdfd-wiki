@@ -27,7 +27,8 @@ $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
   color: "#E67E22"
   content: |
     !example 854665455527526421 Hello!
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

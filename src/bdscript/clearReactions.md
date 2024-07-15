@@ -17,7 +17,7 @@ $nomention
 $clearReactions[$channelID;$message;✅]
 ```
 ### Before 
-```
+``` discord yaml
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"
@@ -33,7 +33,7 @@ $clearReactions[$channelID;$message;✅]
 ```
 \
 ### After
-```
+``` discord yaml
 - user_id: 1009018156494368798
   username: BDFD Support
   color: "#378afa"

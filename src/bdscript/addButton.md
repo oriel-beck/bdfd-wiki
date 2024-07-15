@@ -30,7 +30,8 @@ Here, are all possible values for the `style` function argument.
 - `link` - Redirect button
 
 ```discord yaml
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -61,7 +62,8 @@ Here, are all possible values for the `style` function argument.
       - type: secondary
         label: Secondary
         disabled: true
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -97,7 +99,8 @@ $addButton[no;test;Say hello!;primary;no;]
   color: "#E67E22"
   content: |
     !example
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

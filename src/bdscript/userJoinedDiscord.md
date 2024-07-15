@@ -22,11 +22,39 @@ $userJoinedDiscord[User ID;(Format)]
    $nomention
    $userJoinedDiscord[$authorID]
    ```
-   ![example](https://user-images.githubusercontent.com/69215413/127032089-ef8aa439-89c9-46b2-a2e4-cdf54ab7fa6b.png)
+   
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    2021-01-26
+```
   
 - Custom format
    ```
    $nomention
    $userJoinedDiscord[$authorID;January 2, 2006 at 3:04 PM (MST -07:00)]
    ```
-   ![example](https://user-images.githubusercontent.com/95774950/197385800-92a434d2-e388-4067-8a78-d9357f6184bd.png)
+
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    January 26, 2021 at 10:18 AM (UTC +00:00)
+```

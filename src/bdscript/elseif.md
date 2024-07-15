@@ -1,7 +1,7 @@
 # $elseif
 Checks provided condition only if previous `$if[]` or `$elseif[]` conditions returned false. If the provided condition is true, the following block of code will be executed.
 
-> 🧙‍♂️ Only for **BDScript 2**!
+> Only for **BDScript 2**!
 
 ## Syntax
 ```

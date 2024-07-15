@@ -84,4 +84,3 @@ $or[$nickname==MineBartekSA;$message==Update]
   content: |
     true
   ```
-\

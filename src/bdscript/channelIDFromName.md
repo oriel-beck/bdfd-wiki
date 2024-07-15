@@ -25,7 +25,8 @@ Channel ID: $channelIDFromName[$mesaage]
   color: "#E67E22"
   content: |
     !example main-chat
-- username: BDFD Support
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
