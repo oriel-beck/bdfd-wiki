@@ -14,7 +14,7 @@ What are you waiting for? Create the bot of your dreams today!
 - [Web App](https://botdesignerdiscord.com/app/) *(Alpha Version)*
 ---
 ## 📓 Wiki
-Welcome to our humble abode. You're currrently viewing **Bot Designer for Discord**'s wiki.
+Welcome to our humble abode. You're currently viewing **Bot Designer for Discord**'s wiki.
 
 ### 📂 Wiki Index
 - [Guides](./guides/introduction/aboutSection.md)
