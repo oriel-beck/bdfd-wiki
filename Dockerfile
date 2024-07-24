@@ -10,9 +10,6 @@ RUN (type -p wget >/dev/null || (apt update && apt-get install wget -y)) \
 && apt update \
 && apt install gh -y
 
-# Install necessary tools (curl and tar)
-RUN apt install -y curl tar
-
 # Set config to ssh to bypass auth login
 RUN gh config set git_protocol ssh -h github.com
 
