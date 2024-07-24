@@ -11,9 +11,8 @@ RUN cargo install mdbook
 RUN cargo install mdbook-admonish
 
 # Download and extract mdbook-discord-components
-WORKDIR /usr/local/bin
 RUN curl -L -o components.tar.gz https://github.com/NilPointer-Software/mdbook-discord-components/releases/download/v0.2.0/mdbook-discord-components-v0.2.0.tar.gz \
-    && tar xzf components.tar.gz \
+    && tar xzf components.tar.gz -C /usr/local/bin \
     && rm components.tar.gz
 
 # Set the working directory for your mdbook project
