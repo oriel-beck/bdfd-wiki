@@ -13,7 +13,20 @@ $round[Number;(Decimal place)]
 ## Example
 ```
 $nomention
-$round[100.123;1]
+Result: $round[100.123;1]
 ```
 
-![example](https://user-images.githubusercontent.com/69215413/125875437-417ae90b-c685-4aad-94b7-1767e153b7f3.png)
+``` discord yaml
+- user_id: 803569638084313098
+  username: RainbowKey
+  color: "#E67E22"
+  content: |
+    !example
+- username: BDFD Support
+  user_id: 1009018156494368798
+  color: "#378afa"
+  bot: true
+  verified: true
+  content: |
+    Result: 100.1
+```

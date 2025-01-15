@@ -24,8 +24,8 @@ Here, are all possible values for the `style` function argument.
 - `link` - Redirect button
 
 ```discord yaml
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true
@@ -56,8 +56,8 @@ Here, are all possible values for the `style` function argument.
       - type: secondary
         label: Secondary
         disabled: true
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
+- user_id: 1009018156494368798
+  username: BDFD Support
   color: "#378afa"
   bot: true
   verified: true

@@ -35,6 +35,7 @@ $userBadges[User ID;(Separator)]
 $nomention
 `$userBadges[$authorID;` `]`
 ```
+
 ``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey

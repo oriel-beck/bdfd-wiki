@@ -23,7 +23,7 @@ $eval[$message]
   username: Nicky
   color: "#EE7908"
   content: |
-    !example $sendMessage[Hello! My username is $username]]
+    !example $sendMessage[Hello! My username is $username]
 - user_id: 566613317972394004
   username: Wiki Bot
   color: "#748BD4"

@@ -2,12 +2,21 @@
 
 # 2024
 
+## August
+- Added `$log[]`
+- Added `$logQuota`
+- Added `$suppressErrorLogging`
+- Added `$ceil[]`
+- Added `$floor[]`
+- Added `$sqrt[]`
+- Added `$isInteger[]`
+
+<details><summary>Previous Updates</summary>
+   
 ## July
 - Added `$setUserRoles[]`
 - Added `$getLeaderboardPosition[]`
 - Added `$isBooster[]`
-
-<details><summary>Previous Updates</summary>
 
 ## June
 - Added `$ai[]`

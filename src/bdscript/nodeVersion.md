@@ -12,18 +12,19 @@ $nomention
 Node version: $nodeVersion
 ```
 
-```discord yaml
+``` discord yaml
 - user_id: 803569638084313098
   username: RainbowKey
   color: "#E67E22"
   content: |
     !example
-
 - username: BDFD Support
-  color: "#b9a0e0"
+  user_id: 1009018156494368798
+  color: "#378afa"
   bot: true
+  verified: true
   content: |
-    Node version: 05-07-2023-c8800d6
+    Node version: 11-08-2024-44c8617
 ```
 
 > You can use [`$botNode`](./botNode.md) to find out which node your bot is on.
